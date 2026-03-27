@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>辰馨辰懿溫泉會館 | Sincere Hotel - 礁溪奢華溫泉旅宿</title>
+    <meta name="description" content="辰馨辰懿溫泉會館，座落於宜蘭礁溪，結合現代奢華與禪意美學。提供天然原湯溫泉、精緻手作早餐與礁溪市景客房。預訂您的奢華放鬆之旅。">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Noto+Serif+TC:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo logo-group mb-0">
+                <img src="assets/icon.png" alt="Icon" class="brand-icon">
+                <img src="assets/logo.png" alt="辰馨辰懿溫泉會館" class="brand-text">
+            </div>
+            <div class="nav-links desktop-only">
+                <a href="#intro">品牌介紹</a>
+                <a href="#amenities">精選設施</a>
+                <a href="#room-types">房型一覽</a>
+                <a href="#booking">聯絡我們</a>
+            </div>
+            <div class="nav-toggle" id="menu-btn">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Side CTA -->
+    <div class="side-cta">
+        <a href="#booking" class="cta-vertical">
+            <span>線上訂房</span>
+            <i data-lucide="calendar-days"></i>
+        </a>
+        <a href="https://page.line.me/495hzkbu" target="_blank" class="line-float-btn"
+            aria-label="Line Official Account">
+            <img src="assets/line.png" alt="LINE 官方帳號" class="line-icon-img">
+        </a>
+    </div>
+
+    <!-- Social Float Removed -->
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-bg">
+            <img src="assets/hero.png" alt="Sincere Hotel Hero">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content fade-up flex flex-col items-center justify-center">
+            <h1 class="script-font text-white mb-4">Sincere Hotel</h1>
+            <h2 class="serif tracking-[0.8em] text-white opacity-95 text-lg md:text-xl mb-12 ml-4">礁溪・辰馨辰懿</h2>
+            <a href="#booking" class="btn-primary square-btn">線上訂房</a>
+        </div>
+        <div class="scroll-down">
+            <div class="line"></div>
+            <span class="uppercase tracking-widest text-[10px]">Scroll</span>
+        </div>
+    </section>
+
+    <!-- Introduction & Amenities (Elegant Layout) -->
+    <section class="elegant-intro-section" id="intro" style="padding: 120px 0;">
+        <div class="container relative mt-10" id="amenities">
+            <div class="elegant-header fade-up">
+                <div class="vertical-title shadow-text serif">
+                    關<br>於<br>我<br>們
+                </div>
+                <div class="elegant-text">
+                    <p>辰馨辰懿溫泉會館位於礁溪鄉最核心地段，步行僅需數分鐘即可輕鬆抵達車站。我們將現代極簡美學與天然碳酸氫鈉泉完美契合，讓您走進溫泉鄉，放下城市喧鬧中的緊張生活。</p>
+                    <p>在一泓水波的優美景色中，沁入溫暖的天然美人湯裡，讓城市中的煩惱在此刻暫停。靜靜地享受著與純淨溫泉對話的愜意，體驗難得的休閒假期，讓一身疲憊慵懶地褪去。</p>
+                </div>
+            </div>
+            
+            <div class="elegant-gallery fade-up" data-delay="0.2">
+                <div class="elegant-gallery-item"><img src="assets/spot.png" alt="天然泉水景致"></div>
+                <div class="elegant-gallery-item"><img src="assets/room.png" alt="頂級旅宿空間"></div>
+                <div class="elegant-gallery-item"><img src="assets/waterfall.png" alt="和風風呂設施"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Types Showcase -->
+    <section class="rooms-section section-padding" id="room-types">
+        <div class="container">
+            <div class="mb-16 fade-up" style="text-align: center;">
+                <h2 class="serif text-4xl md:text-5xl" style="letter-spacing: 0.1em; color: var(--primary-text);">精選房型</h2>
+            </div>
+
+            <div class="room-grid">
+                <!-- Room Card 1: 雙人房－附私人衛浴 -->
+                <div class="room-card glass fade-up">
+                    <div class="card-img">
+                        <img src="assets/room-double-bath.png" alt="雙人房－附私人衛浴">
+                        <span class="badge">9.3 超棒</span>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="serif text-2xl mb-2">雙人房－附私人衛浴</h3>
+                        <div class="room-meta mb-6">
+                            <span><i data-lucide="maximize"></i> 33 m²</span>
+                            <span><i data-lucide="users"></i> 2 人</span>
+                            <span><i data-lucide="bed"></i> 一大床</span>
+                            <span><i data-lucide="mountain-snow"></i> 市景</span>
+                        </div>
+
+                        <div class="card-cta-group">
+                            <span class="cta-label">立即訂房</span>
+                            <div class="booking-links">
+                                <a href="https://www.booking.com/hotel/tw/chen-xin-chen-yi-er-guan.zh-tw.html"
+                                    target="_blank" class="booking-btn">Booking</a>
+                                <a href="https://www.agoda.com/zh-tw/h30053903/hotel/yilan-tw.html" target="_blank"
+                                    class="agoda-btn">Agoda</a>
+                                <a href="https://www.klook.com/zh-TW/hotels/detail/507387-sincere-hot-spring-resort/"
+                                    target="_blank" class="klook-btn">Klook</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Card 2: 標準雙人房 -->
+                <div class="room-card glass fade-up" data-delay="0.1">
+                    <div class="card-img">
+                        <img src="assets/room-standard.png" alt="標準雙人房">
+                        <span class="badge">8.5 很讚</span>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="serif text-2xl mb-2">標準雙人房</h3>
+                        <div class="room-meta mb-6">
+                            <span><i data-lucide="maximize"></i> 30 m²</span>
+                            <span><i data-lucide="users"></i> 2 人</span>
+                            <span><i data-lucide="bed"></i> 一大床</span>
+                            <span><i data-lucide="mountain-snow"></i> 市景</span>
+                        </div>
+
+                        <div class="card-cta-group">
+                            <span class="cta-label">立即訂房</span>
+                            <div class="booking-links">
+                                <a href="https://www.booking.com/hotel/tw/chen-xin-chen-yi-er-guan.zh-tw.html"
+                                    target="_blank" class="booking-btn">Booking</a>
+                                <a href="https://www.agoda.com/zh-tw/h30053903/hotel/yilan-tw.html" target="_blank"
+                                    class="agoda-btn">Agoda</a>
+                                <a href="https://www.klook.com/zh-TW/hotels/detail/507387-sincere-hot-spring-resort/"
+                                    target="_blank" class="klook-btn">Klook</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Card 3: 四人房－附露台 -->
+                <div class="room-card glass fade-up" data-delay="0.2">
+                    <div class="card-img">
+                        <img src="assets/room-terrace.png" alt="四人房－附露台">
+                        <span class="badge">9.6 超棒</span>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="serif text-2xl mb-2">四人房－附露台</h3>
+                        <div class="room-meta mb-6">
+                            <span><i data-lucide="maximize"></i> 50 m²</span>
+                            <span><i data-lucide="users"></i> 4 人</span>
+                            <span><i data-lucide="bed"></i> 兩大床</span>
+                            <span><i data-lucide="mountain-snow"></i> 市景</span>
+                        </div>
+
+                        <div class="card-cta-group">
+                            <span class="cta-label">立即訂房</span>
+                            <div class="booking-links">
+                                <a href="https://www.booking.com/hotel/tw/chen-xin-chen-yi-er-guan.zh-tw.html"
+                                    target="_blank" class="booking-btn">Booking</a>
+                                <a href="https://www.agoda.com/zh-tw/h30053903/hotel/yilan-tw.html" target="_blank"
+                                    class="agoda-btn">Agoda</a>
+                                <a href="https://www.klook.com/zh-TW/hotels/detail/507387-sincere-hot-spring-resort/"
+                                    target="_blank" class="klook-btn">Klook</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Card 4: 四人房－附浴缸 -->
+                <div class="room-card glass fade-up" data-delay="0.3">
+                    <div class="card-img">
+                        <img src="assets/room-quad-bath.png" alt="四人房－附浴缸">
+                        <span class="badge">8.5 很讚</span>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="serif text-2xl mb-2">四人房－附浴缸</h3>
+                        <div class="room-meta mb-6">
+                            <span><i data-lucide="maximize"></i> 50 m²</span>
+                            <span><i data-lucide="users"></i> 4 人</span>
+                            <span><i data-lucide="bed"></i> 兩大床</span>
+                            <span><i data-lucide="mountain-snow"></i> 市景</span>
+                        </div>
+
+                        <div class="card-cta-group">
+                            <span class="cta-label">立即訂房</span>
+                            <div class="booking-links">
+                                <a href="https://www.booking.com/hotel/tw/chen-xin-chen-yi-er-guan.zh-tw.html"
+                                    target="_blank" class="booking-btn">Booking</a>
+                                <a href="https://www.agoda.com/zh-tw/h30053903/hotel/yilan-tw.html" target="_blank"
+                                    class="agoda-btn">Agoda</a>
+                                <a href="https://www.klook.com/zh-TW/hotels/detail/507387-sincere-hot-spring-resort/"
+                                    target="_blank" class="klook-btn">Klook</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Platforms & Reviews -->
+    <section class="booking-section section-padding bg-slate-50/50" id="booking">
+        <!-- Marquee Reviews -->
+        <div class="marquee-wrapper fade-up" data-delay="0.1" style="margin-bottom: 60px;">
+            <div class="marquee-track">
+                <!-- Group 1 -->
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Hsu</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">住宿離大街及老街走路輕鬆抵達，極為便利的家庭住宿選擇！</p><span class="room-type">四人房－附浴缸</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">芓臻</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">房間乾淨程度很棒，附近購物也十分方便，值得推薦！</p><span class="room-type">四人房－附露台</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Peiying</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">浴池空間很大，泡湯體驗好極了，非常適合情侶度假。</p><span class="room-type">標準雙人房</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">亭予</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">很舒服的住宿體驗，老闆娘親切沒距離感，寵物友善超加分！</p><span class="room-type">標準雙人房</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Jackymao</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">除了寵物友善，房間很大還有專屬的超大泡湯池，超級讚！</p><span class="room-type">四人房－附露台</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">葛先生</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">泡湯池放水快特別舒服，走出會館就是商店街，生活機能絕佳。</p><span class="room-type">四人房－附露台</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">奕縣</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">氣氛舒服，環境舒適，讓人完全放鬆下來的溫泉會館。</p><span class="room-type">標準雙人房</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Elaine</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">環境舒適空間蠻大的，寵物友善這點一定要特別讚賞！</p><span class="room-type">雙人房－附私人衛浴</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">喻喬</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">空間大床很舒服，房間乾淨無異味，離湯圍溝非常近！</p><span class="room-type">雙人房－附私人衛浴</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Chang</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">環境空間寬敞乾淨，還有小和室讓人放鬆，非常適合親子！</p><span class="room-type">四人房－附浴缸</span>
+                </div>
+                <!-- Group 2 (Clone for infinite marquee) -->
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Hsu</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">住宿離大街及老街走路輕鬆抵達，極為便利的家庭住宿選擇！</p><span class="room-type">四人房－附浴缸</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">芓臻</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">房間乾淨程度很棒，附近購物也十分方便，值得推薦！</p><span class="room-type">四人房－附露台</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Peiying</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">浴池空間很大，泡湯體驗好極了，非常適合情侶度假。</p><span class="room-type">標準雙人房</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">亭予</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">很舒服的住宿體驗，老闆娘親切沒距離感，寵物友善超加分！</p><span class="room-type">標準雙人房</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Jackymao</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">除了寵物友善，房間很大還有專屬的超大泡湯池，超級讚！</p><span class="room-type">四人房－附露台</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">葛先生</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">泡湯池放水快特別舒服，走出會館就是商店街，生活機能絕佳。</p><span class="room-type">四人房－附露台</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">奕縣</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">氣氛舒服，環境舒適，讓人完全放鬆下來的溫泉會館。</p><span class="room-type">標準雙人房</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Elaine</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">環境舒適空間蠻大的，寵物友善這點一定要特別讚賞！</p><span class="room-type">雙人房－附私人衛浴</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">喻喬</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">空間大床很舒服，房間乾淨無異味，離湯圍溝非常近！</p><span class="room-type">雙人房－附私人衛浴</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Chang</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">環境空間寬敞乾淨，還有小和室讓人放鬆，非常適合親子！</p><span class="room-type">四人房－附浴缸</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-20 mt-10 fade-up">
+            <div class="booking-card">
+                <div class="mb-16 fade-up" style="text-align: center;">
+                    <h2 class="serif text-4xl md:text-5xl" style="letter-spacing: 0.1em; color: var(--primary-text);">線上訂房</h2>
+                </div>
+                <div class="platform-group justify-center">
+                    <a href="https://www.booking.com/hotel/tw/chen-xin-chen-yi-er-guan.zh-tw.html" target="_blank"
+                        class="platform-btn booking-com shadow-sm hover:shadow-xl">
+                        <span>Booking.com</span>
+                        <i data-lucide="external-link"></i>
+                    </a>
+                    <a href="https://www.agoda.com/zh-tw/h30053903/hotel/yilan-tw.html" target="_blank"
+                        class="platform-btn agoda shadow-sm hover:shadow-xl">
+                        <span>Agoda</span>
+                        <i data-lucide="external-link"></i>
+                    </a>
+                    <a href="https://www.klook.com/zh-TW/hotels/detail/507387-sincere-hot-spring-resort/"
+                        target="_blank" class="platform-btn klook shadow-sm hover:shadow-xl">
+                        <span>Klook</span>
+                        <i data-lucide="external-link"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container py-20">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="mb-6">
+                        <span class="footer-logo-text">辰馨辰懿溫泉會館</span>
+                    </div>
+                    <p class="body-text opacity-80">宜蘭礁溪最優雅的現代溫泉與極簡美學會館。</p>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="serif text-xl mb-6">聯繫我們</h4>
+                    <ul class="contact-list">
+                        <li><i data-lucide="phone"></i> 03-988-1234</li>
+                        <li><i data-lucide="mail"></i> hello@sincerehotel.com</li>
+                        <li><i data-lucide="map-pin"></i> 宜蘭縣礁溪鄉礁溪路五段 123 號</li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4 class="serif text-xl mb-6">社群連結</h4>
+                    <div class="footer-social-icons">
+                        <a href="https://page.line.me/495hzkbu" target="_blank" class="social-icon-btn" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="https://page.line.me/495hzkbu" target="_blank" class="social-icon-btn" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="https://page.line.me/495hzkbu" target="_blank" class="social-icon-btn" aria-label="Threads">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M14.507 9.878c-1.077-.732-2.313-1.026-3.692-1.026-3.085 0-5.744 1.776-6.626 4.606-.713 2.162-.122 4.608 1.649 6.223 1.55 1.408 3.737 1.933 5.797 1.479 2.05-.444 3.7-1.896 4.417-3.899l.022-.069v.882c0 2.825-1.928 4.605-4.8 4.605-1.748 0-3.32-.907-4.08-2.345l-2.023 1.144c1.157 2.185 3.535 3.518 6.103 3.518 4.09 0 7.025-2.617 7.025-6.924V11.23c0-.063 0-.124-.002-.187-.33-.61-1.127-1.861-3.79-1.165z M12.012 18.005c-2.306 0-3.957-1.464-3.957-3.659 0-2.196 1.65-3.66 3.957-3.66 2.305 0 3.956 1.464 3.956 3.66 0 2.195-1.651 3.659-3.956 3.659z M12.012 12.336c-1.127 0-1.933.725-1.933 2.01 0 1.284.806 2.01 1.933 2.01 1.126 0 1.933-.726 1.933-2.01 0-1.285-.807-2.01-1.933-2.01z"></path></svg>
+                        </a>
+                        <a href="https://page.line.me/495hzkbu" target="_blank" class="social-icon-btn" aria-label="Line">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M22.25 10c0-4.412-4.595-8-10.25-8S1.75 5.588 1.75 10c0 3.956 3.693 7.306 8.547 7.9 1.124.137 1.341.396 1.265.885l-.234 1.442c-.055.337.284.544.604.341 3.129-1.987 8.163-5.266 9.613-8.118C22.067 11.455 22.25 10.748 22.25 10zM8.324 12.448H6.425c-.218 0-.395-.177-.395-.395V8.13c0-.218.177-.395.395-.395s.395.177.395.395v3.528h1.504c.218 0 .395.177.395.395 0 .218-.178.395-.395.395zm2.844-.395c0 .218-.177.395-.395.395s-.395-.177-.395-.395v-3.924c0-.218.177-.395.395-.395s.395.177.395.395v3.924zm4.183.395h-1.39c-.198 0-.39-.142-.403-.339L12.592 9.53v2.523c0 .218-.177.395-.395.395s-.395-.177-.395-.395V8.13c0-.218.177-.395.395-.395.198 0 .39.142.403.339l.966 2.574v-2.518c0-.218.177-.395.395-.395s.395.177.395.395v3.923c0 .218-.176.395-.395.395zm3.623 0H17.47c-.218 0-.395-.177-.395-.395V8.13c0-.218.177-.395.395-.395.218 0 .395.177.395.395v1.464h1.11c.218 0 .395.177.395.395s-.395.395-.395.395h-1.11v1.666h1.504c.218 0 .395.177.395.395 0 .218-.178.395-.395.395z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom custom-copyright">
+                &copy; 辰馨辰懿溫泉會館 Sincere Hotel. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal (Simulated) -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-close">&times;</div>
+        <div class="lightbox-content">
+            <img src="" alt="Gallery Image" id="lightbox-img">
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
