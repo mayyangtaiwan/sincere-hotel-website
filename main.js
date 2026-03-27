@@ -75,32 +75,83 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Lightbox / Image Gallery Simulation
-    const triggers = document.querySelectorAll('.gallery-trigger');
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    const closeBtn = document.querySelector('.lightbox-close');
+    // Gallery Modal
+    const galleryModal    = document.getElementById('gallery-modal');
+    const galleryCloseBtn = document.getElementById('gallery-modal-close');
+    const galleryMainImg  = document.getElementById('gallery-main-img');
+    const galleryRoomName = document.getElementById('gallery-room-name');
+    const galleryCounter  = document.getElementById('gallery-counter');
+    const galleryPrev     = document.getElementById('gallery-prev');
+    const galleryNext     = document.getElementById('gallery-next');
+    const galleryThumbs   = document.getElementById('gallery-thumbs');
 
-    triggers.forEach(trigger => {
-        trigger.addEventListener('click', () => {
-            const roomType = trigger.getAttribute('data-room');
-            const imgSrc = trigger.closest('.room-card').querySelector('img').src;
-            if (lightbox && lightboxImg) {
-                lightboxImg.src = imgSrc;
-                lightbox.style.display = 'flex';
-                gsap.fromTo('.lightbox-content', { scale: 0.8, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5 });
-            }
+    let galleryImages = [];
+    let galleryIndex  = 0;
+
+    function openGallery(images, roomName, startIndex) {
+        galleryImages = images;
+        galleryIndex  = startIndex || 0;
+        galleryRoomName.textContent = roomName;
+        galleryThumbs.innerHTML = '';
+        images.forEach((src, i) => {
+            const thumb = document.createElement('img');
+            thumb.src = src;
+            thumb.alt = `照片 ${i + 1}`;
+            thumb.className = 'gallery-thumb' + (i === galleryIndex ? ' active' : '');
+            thumb.addEventListener('click', () => setGalleryIndex(i));
+            galleryThumbs.appendChild(thumb);
+        });
+        setGalleryIndex(galleryIndex, false);
+        galleryModal.classList.add('open');
+        lucide.createIcons({ nodes: [galleryPrev, galleryNext] });
+        document.body.style.overflow = 'hidden';
+    }
+
+    function setGalleryIndex(idx, animate) {
+        if (animate === undefined) animate = true;
+        galleryIndex = (idx + galleryImages.length) % galleryImages.length;
+        if (animate) {
+            galleryMainImg.classList.add('fade');
+            setTimeout(() => {
+                galleryMainImg.src = galleryImages[galleryIndex];
+                galleryMainImg.classList.remove('fade');
+            }, 200);
+        } else {
+            galleryMainImg.src = galleryImages[galleryIndex];
+        }
+        galleryCounter.textContent = (galleryIndex + 1) + ' / ' + galleryImages.length;
+        document.querySelectorAll('.gallery-thumb').forEach((t, i) => {
+            t.classList.toggle('active', i === galleryIndex);
+        });
+        const activeThumb = galleryThumbs.children[galleryIndex];
+        if (activeThumb) activeThumb.scrollIntoView({ inline: 'nearest', behavior: 'smooth' });
+    }
+
+    function closeGallery() {
+        galleryModal.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.card-gallery-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const images   = JSON.parse(btn.getAttribute('data-images'));
+            const roomName = btn.getAttribute('data-room');
+            openGallery(images, roomName, 0);
         });
     });
 
-    if (closeBtn && lightbox) {
-        closeBtn.addEventListener('click', () => {
-            lightbox.style.display = 'none';
-        });
-        lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox) lightbox.style.display = 'none';
-        });
-    }
+    if (galleryCloseBtn) galleryCloseBtn.addEventListener('click', closeGallery);
+    if (galleryModal)    galleryModal.addEventListener('click', (e) => { if (e.target === galleryModal) closeGallery(); });
+    if (galleryPrev)     galleryPrev.addEventListener('click', () => setGalleryIndex(galleryIndex - 1));
+    if (galleryNext)     galleryNext.addEventListener('click', () => setGalleryIndex(galleryIndex + 1));
+
+    document.addEventListener('keydown', (e) => {
+        if (!galleryModal || !galleryModal.classList.contains('open')) return;
+        if (e.key === 'ArrowLeft')  setGalleryIndex(galleryIndex - 1);
+        if (e.key === 'ArrowRight') setGalleryIndex(galleryIndex + 1);
+        if (e.key === 'Escape')     closeGallery();
+    });
 
     // 3D Tilt Effect on Room Cards
     const cards = document.querySelectorAll('.room-card');
@@ -139,6 +190,24 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileNavLinks.forEach(link => {
         link.addEventListener('click', () => {
             mobileNav.classList.remove('open');
+        });
+    });
+
+    // FAQ Accordion
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const isOpen = btn.getAttribute('aria-expanded') === 'true';
+            // Close all
+            faqQuestions.forEach(q => {
+                q.setAttribute('aria-expanded', 'false');
+                q.nextElementSibling.classList.remove('open');
+            });
+            // Toggle current
+            if (!isOpen) {
+                btn.setAttribute('aria-expanded', 'true');
+                btn.nextElementSibling.classList.add('open');
+            }
         });
     });
 });
