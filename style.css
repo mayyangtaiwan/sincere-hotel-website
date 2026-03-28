@@ -795,9 +795,38 @@ body {
 }
 
 .footer-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 60px;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 60px !important;
+  align-items: start !important;
+}
+
+.footer-info { grid-column: 1 !important; }
+.footer-contact { grid-column: 2 !important; }
+.footer-social { grid-column: 3 !important; }
+
+@media (max-width: 991px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .footer-info { grid-column: 1 / span 2 !important; }
+  .footer-contact { grid-column: 1 !important; }
+  .footer-social { grid-column: 2 !important; }
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .footer-info, .footer-contact, .footer-social {
+    grid-column: 1 !important;
+  }
+}
+
+.border-bottom-accent {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+  display: inline-block;
+  min-width: 100px;
 }
 
 .contact-list {
@@ -808,12 +837,31 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 15px;
-  margin-bottom: 20px;
-  color: var(--secondary-text);
+  margin-bottom: 24px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
 }
 
-.footer-section .contact-list li {
-  color: rgba(255, 255, 255, 0.8);
+.contact-list i {
+  color: var(--accent-gold);
+  width: 20px;
+  height: 20px;
+}
+
+.block {
+  display: block;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.opacity-70 {
+  opacity: 0.7;
+}
+
+.text-sm {
+  font-size: 0.85rem;
 }
 
 .footer-social-icons {
@@ -945,10 +993,6 @@ body {
   .booking-links {
     flex-direction: column;
     gap: 10px;
-  }
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
   }
   .nav-container {
     padding: 0 20px;
@@ -1278,20 +1322,12 @@ body {
   color: #4a4a4a;
 }
 
-.notice-icon {
-  font-size: 1.2rem;
+.notice-lucide-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--accent-gold);
   flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.notice-footer {
-  border-top: 1px solid rgba(139, 115, 85, 0.15);
-  padding-top: 20px;
-  font-family: var(--serif-font);
-  font-size: 0.95rem;
-  color: var(--accent-brown);
-  text-align: center;
-  letter-spacing: 0.08em;
+  margin-top: 4px;
 }
 
 /* FAQ Accordion */
