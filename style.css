@@ -11,6 +11,34 @@
   --playfair: "Playfair Display", serif;
 }
 
+/* Utilities */
+.text-center { text-align: center; }
+.inline-block { display: inline-block; }
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-5 { margin-bottom: 1.25rem; }
+.mb-8 { margin-bottom: 2rem; }
+.mb-12 { margin-bottom: 3rem; }
+.mb-16 { margin-bottom: 4rem; }
+.mb-20 { margin-bottom: 5rem; }
+.mt-10 { margin-top: 2.5rem; }
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.py-1\.5 { padding-top: 0.375rem; padding-bottom: 0.375rem; }
+.rounded-full { border-radius: 9999px; }
+.uppercase { text-transform: uppercase; }
+.tracking-widest { letter-spacing: 0.15em; }
+.font-bold { font-weight: 700; }
+.text-white { color: #ffffff !important; }
+.opacity-70 { opacity: 0.7; }
+.opacity-80 { opacity: 0.8; }
+.max-w-600 { max-width: 600px; margin-left: auto; margin-right: auto; }
+.relative { position: relative; }
+
+
 * {
   margin: 0;
   padding: 0;
