@@ -1422,7 +1422,7 @@ body {
 }
 
 .faq-answer.open {
-  max-height: 600px;
+  max-height: 1200px;
   padding: 0 8px 24px;
 }
 
