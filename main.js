@@ -193,6 +193,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Language Dropdown
+    const langDropdown = document.querySelector('.lang-dropdown');
+    if (langDropdown) {
+        const langBtn = langDropdown.querySelector('.lang-dropdown-btn');
+        langBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            langDropdown.classList.toggle('open');
+        });
+        document.addEventListener('click', () => {
+            langDropdown.classList.remove('open');
+        });
+    }
+
     // FAQ Accordion
     const faqQuestions = document.querySelectorAll('.faq-question');
     faqQuestions.forEach(btn => {

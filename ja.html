@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>辰馨辰懿温泉会館 Sincere Resort｜公式サイト</title>
+    <meta name="description" content="辰馨辰懿温泉会館は、宜蘭・礁渓に位置するモダンラグジュアリーと禅の美学が融合した温泉宿。天然かけ流しの炭酸水素塩泉、こだわりの朝食、市街ビューの客室をご用意。礁渓温泉で癒しのひとときをご予約ください。">
+
+    <!-- Open Graph / Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="辰馨辰懿温泉会館｜公式サイト">
+    <meta property="og:description" content="辰馨辰懿温泉会館は、宜蘭・礁渓に位置するモダンラグジュアリーと禅の美学が融合した温泉宿。天然かけ流しの炭酸水素塩泉、こだわりの朝食、市街ビューの客室をご用意。礁渓温泉で癒しのひとときをご予約ください。">
+    <meta property="og:image" content="assets/hero.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="900">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="辰馨辰懿温泉会館｜公式サイト">
+    <meta name="twitter:description" content="辰馨辰懿温泉会館は、宜蘭・礁渓に位置するモダンラグジュアリーと禅の美学が融合した温泉宿。天然かけ流しの炭酸水素塩泉、こだわりの朝食、市街ビューの客室をご用意。礁渓温泉で癒しのひとときをご予約ください。">
+    <meta name="twitter:image" content="assets/hero.png">
+
+    <!-- Standard Thumbnail for Some Search Platforms -->
+    <meta name="thumbnail" content="assets/hero.png">
+
+    <!-- JSON-LD Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "辰馨辰懿温泉会館",
+      "image": "assets/hero.png",
+      "description": "辰馨辰懿温泉会館は、宜蘭・礁渓に位置するモダンラグジュアリーと禅の美学が融合した温泉宿。天然かけ流しの炭酸水素塩泉、こだわりの朝食、市街ビューの客室をご用意。礁渓温泉で癒しのひとときをご予約ください。",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "徳陽路 95 号",
+        "addressLocality": "礁渓郷",
+        "addressRegion": "宜蘭県",
+        "postalCode": "262",
+        "addressCountry": "TW"
+      },
+      "telephone": "0965-832-882"
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+TC:wght@300;400;700&family=Noto+Serif+TC:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --serif-font: "Noto Serif JP", "Noto Serif TC", serif;
+            --sans-font: "Noto Sans JP", "Noto Sans TC", sans-serif;
+        }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="assets/favicon-144.png">
+    <link rel="apple-touch-icon" href="assets/favicon-144.png">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo logo-group mb-0">
+                <img src="assets/icon.png" alt="Icon" class="brand-icon">
+                <img src="assets/logo.png" alt="辰馨辰懿温泉会館" class="brand-text">
+            </div>
+            <div class="nav-links desktop-only">
+                <a href="#intro">会館について</a>
+                <a href="#room-types">客室一覧</a>
+                <a href="#footer">お問い合わせ</a>
+            </div>
+            <div class="nav-lang desktop-only">
+                <div class="lang-dropdown">
+                    <button class="lang-dropdown-btn" aria-label="言語を変更" aria-haspopup="true">
+                        <i data-lucide="globe"></i>日本語<i data-lucide="chevron-down" class="lang-chevron"></i>
+                    </button>
+                    <div class="lang-dropdown-menu">
+                        <a href="index.html">中文</a>
+                        <a href="en.html">EN</a>
+                        <a href="ko.html">한국어</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-toggle" id="menu-btn">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobile-nav">
+        <button class="mobile-nav-close" id="mobile-nav-close" aria-label="閉じる">&times;</button>
+        <nav class="mobile-nav-links">
+            <a href="#intro" class="mobile-nav-link">会館について</a>
+            <a href="#room-types" class="mobile-nav-link">客室一覧</a>
+            <a href="#footer" class="mobile-nav-link">お問い合わせ</a>
+            <div class="mobile-lang-group">
+                <a href="index.html" class="mobile-nav-link lang-switch">中文</a>
+                <a href="en.html" class="mobile-nav-link lang-switch">EN</a>
+                <a href="ko.html" class="mobile-nav-link lang-switch">한국어</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Side CTA -->
+    <div class="side-cta">
+        <a href="#booking" class="cta-vertical">
+            <span>オンライン予約</span>
+            <i data-lucide="calendar-days"></i>
+        </a>
+        <a href="https://line.me/R/ti/p/@340omfsh" target="_blank" class="line-float-btn"
+            aria-label="LINE公式アカウント">
+            <img src="assets/line.png" alt="LINE公式アカウント" class="line-icon-img">
+        </a>
+    </div>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-bg">
+            <img src="assets/hero.png" alt="Sincere Hotel Hero">
+            <div class="hero-overlay"></div>
+        </div>
+        <!-- Decorative Icons -->
+        <i data-lucide="sparkles" class="bg-deco-icon bg-deco-1"></i>
+        <i data-lucide="waves" class="bg-deco-icon bg-deco-2"></i>
+        <i data-lucide="sparkle" class="bg-deco-icon bg-deco-6"></i>
+        <i data-lucide="moon-star" class="bg-deco-icon bg-deco-7"></i>
+
+        <div class="hero-content fade-up flex flex-col items-center justify-center">
+            <h1 class="script-font text-white" style="margin-bottom: 16px;">Sincere Hotel</h1>
+            <h2 class="serif text-white"
+                style="letter-spacing: 0.8em; font-size: 1.4rem; margin-bottom: 60px; margin-left: 0.8em; opacity: 0.95;">
+                礁渓・辰馨辰懿</h2>
+            <a href="#booking" class="btn-primary square-btn">オンライン予約</a>
+        </div>
+        <div class="scroll-down">
+            <div class="line"></div>
+            <span class="uppercase tracking-widest text-[10px]">Scroll</span>
+        </div>
+    </section>
+
+    <!-- Introduction & Amenities (Elegant Layout) -->
+    <section class="elegant-intro-section" id="intro" style="padding: 120px 0;">
+        <i data-lucide="leaf" class="bg-deco-icon bg-deco-4"></i>
+        <i data-lucide="flower-2" class="bg-deco-icon bg-deco-3"></i>
+        <i data-lucide="leaf" class="bg-deco-icon bg-deco-8"></i>
+        <i data-lucide="flower" class="bg-deco-icon bg-deco-9"></i>
+        <div class="container relative mt-10" id="amenities">
+            <div class="elegant-header fade-up">
+                <div class="vertical-title shadow-text serif">
+                    会<br>館<br>紹<br>介
+                </div>
+                <div class="elegant-text">
+                    <p>辰馨辰懿温泉会館 Sincere Hot Spring &amp; Resort
+                        は、宜蘭県礁渓郷の徳陽路に位置し、礁渓老街や湯囲溝公園まで徒歩圏内です。全客室に岩造りの専用浴槽を備え、認証済みの天然炭酸水素塩泉——いわゆる「美人の湯」を引いています。長く浸かっても肌がふやけず、入るほどに肌がしっとりすべすべになる、礁渓温泉で最も愛される泉質のひとつです。
+                    </p>
+                    <p>温かみのあるダブルルームからテラス付きの広々とした4人部屋まで、4種類の客室をご用意。全館セルフチェックイン方式を採用しており、いつでも自由でプライベートな時間をお過ごしいただけます。ペット同伴も歓迎です。また、近隣の朝食店・駐車場・地元レンタカー業者と提携し、礁渓の旅のすべてを心を込めてサポートいたします。
+                    </p>
+                </div>
+            </div>
+
+            <div class="elegant-gallery fade-up" data-delay="0.2">
+                <div class="elegant-gallery-item"><img src="assets/spot.png" alt="天然温泉の景色"></div>
+                <div class="elegant-gallery-item"><img src="assets/building.png" alt="上質な宿泊空間"></div>
+                <div class="elegant-gallery-item"><img src="assets/waterfall.png" alt="和風風呂施設"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Types Showcase -->
+    <section class="rooms-section section-padding" id="room-types">
+        <i data-lucide="mountains" class="bg-deco-icon bg-deco-1"></i>
+        <i data-lucide="thermometer-sun" class="bg-deco-icon bg-deco-5"></i>
+        <i data-lucide="mountain" class="bg-deco-icon bg-deco-10"></i>
+        <i data-lucide="waves" class="bg-deco-icon bg-deco-6"></i>
+        <div class="container">
+            <div class="mb-16 fade-up" style="text-align: center;">
+                <h2 class="serif text-4xl md:text-5xl" style="letter-spacing: 0.1em; color: var(--primary-text);">客室一覧
+                </h2>
+            </div>
+
+            <div class="room-grid">
+                <!-- Room Card 1: ダブルルーム（専用バスルーム付き）(201) -->
+                <div class="room-card glass fade-up">
+                    <div class="card-img">
+                        <img src="assets/201/S__4653092_0.jpg" alt="ダブルルーム（専用バスルーム付き）">
+                        <button class="card-gallery-btn" aria-label="写真をもっと見る" data-room="ダブルルーム（専用バスルーム付き）"
+                            data-images='["assets/201/S__4653083_0.jpg","assets/201/S__4653084_0.jpg","assets/201/S__4653085_0.jpg","assets/201/S__4653086_0.jpg","assets/201/S__4653087_0.jpg","assets/201/S__4653088_0.jpg","assets/201/S__4653089_0.jpg","assets/201/S__4653090_0.jpg","assets/201/S__4653091_0.jpg","assets/201/S__4653092_0.jpg","assets/201/S__4653093.jpg"]'>
+                            <i data-lucide="images"></i> 写真をもっと見る
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="serif text-2xl mb-2">ダブルルーム（専用バスルーム付き）（2階201号室）</h3>
+                        <div class="room-meta mb-6">
+                            <span><i data-lucide="maximize"></i> 33 m²</span>
+                            <span><i data-lucide="users"></i> 2名</span>
+                            <span><i data-lucide="bed"></i> ダブルベッド1台</span>
+                            <span><i data-lucide="mountain-snow"></i> シティビュー</span>
+                        </div>
+                        <div class="card-cta-group">
+                            <span class="cta-label">今すぐ予約</span>
+                            <div class="booking-links">
+                                <a href="https://www.booking.com/hotel/tw/chen-xin-chen-yi-er-guan.ja.html"
+                                    target="_blank" class="booking-btn">Booking</a>
+                                <a href="https://www.agoda.com/ja-jp/h30053903/hotel/yilan-tw.html" target="_blank"
+                                    class="agoda-btn">Agoda</a>
+                                <a href="https://jp.trip.com/hotels/cityname-hotel-detail-133686693/hotelname/"
+                                    target="_blank" class="trip-btn">Trip.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Card 2: スタンダードダブルルーム (301) -->
+                <div class="room-card glass fade-up" data-delay="0.1">
+                    <div class="card-img">
+                        <img src="assets/301/S__4653109_0.jpg" alt="スタンダードダブルルーム">
+
+                        <button class="card-gallery-btn" aria-label="写真をもっと見る" data-room="スタンダードダブルルーム"
+                            data-images='["assets/301/S__4653106_0.jpg","assets/301/S__4653107_0.jpg","assets/301/S__4653108_0.jpg","assets/301/S__4653109_0.jpg","assets/301/S__4653110_0.jpg","assets/301/S__4653111_0.jpg","assets/301/S__4653112_0.jpg","assets/301/S__4653113_0.jpg"]'>
+                            <i data-lucide="images"></i> 写真をもっと見る
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="serif text-2xl mb-2">スタンダードダブルルーム（3階301号室）</h3>
+                        <div class="room-meta mb-6">
+                            <span><i data-lucide="maximize"></i> 30 m²</span>
+                            <span><i data-lucide="users"></i> 2名</span>
+                            <span><i data-lucide="bed"></i> ダブルベッド1台</span>
+                            <span><i data-lucide="mountain-snow"></i> シティビュー</span>
+                        </div>
+                        <div class="card-cta-group">
+                            <span class="cta-label">今すぐ予約</span>
+                            <div class="booking-links">
+                                <a href="https://www.booking.com/hotel/tw/chen-xin-chen-yi-er-guan.ja.html"
+                                    target="_blank" class="booking-btn">Booking</a>
+                                <a href="https://www.agoda.com/ja-jp/h30053903/hotel/yilan-tw.html" target="_blank"
+                                    class="agoda-btn">Agoda</a>
+                                <a href="https://jp.trip.com/hotels/cityname-hotel-detail-133686693/hotelname/"
+                                    target="_blank" class="trip-btn">Trip.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Card 3: 4人部屋（テラス付き）(302) -->
+                <div class="room-card glass fade-up" data-delay="0.2">
+                    <div class="card-img">
+                        <img src="assets/302/S__4653116_0.jpg" alt="4人部屋（テラス付き）">
+
+                        <button class="card-gallery-btn" aria-label="写真をもっと見る" data-room="4人部屋（テラス付き）"
+                            data-images='["assets/302/S__4653116_0.jpg","assets/302/S__4653117_0.jpg","assets/302/S__4653118_0.jpg","assets/302/S__4653119_0.jpg","assets/302/S__4653120_0.jpg","assets/302/S__4653121_0.jpg","assets/302/S__4653122_0.jpg","assets/302/S__4653123_0.jpg","assets/302/S__4653124_0.jpg","assets/302/S__4653125.jpg"]'>
+                            <i data-lucide="images"></i> 写真をもっと見る
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="serif text-2xl mb-2">4人部屋（テラス付き）（3階302号室）</h3>
+                        <div class="room-meta mb-6">
+                            <span><i data-lucide="maximize"></i> 50 m²</span>
+                            <span><i data-lucide="users"></i> 4名</span>
+                            <span><i data-lucide="bed"></i> ダブルベッド2台</span>
+                            <span><i data-lucide="mountain-snow"></i> シティビュー</span>
+                        </div>
+                        <div class="card-cta-group">
+                            <span class="cta-label">今すぐ予約</span>
+                            <div class="booking-links">
+                                <a href="https://www.booking.com/hotel/tw/chen-xin-chen-yi-er-guan.ja.html"
+                                    target="_blank" class="booking-btn">Booking</a>
+                                <a href="https://www.agoda.com/ja-jp/h30053903/hotel/yilan-tw.html" target="_blank"
+                                    class="agoda-btn">Agoda</a>
+                                <a href="https://jp.trip.com/hotels/cityname-hotel-detail-133686693/hotelname/"
+                                    target="_blank" class="trip-btn">Trip.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Card 4: 4人部屋（バスタブ付き）(202) -->
+                <div class="room-card glass fade-up" data-delay="0.3">
+                    <div class="card-img">
+                        <img src="assets/202/S__4653102_0.jpg" alt="4人部屋（バスタブ付き）">
+
+                        <button class="card-gallery-btn" aria-label="写真をもっと見る" data-room="4人部屋（バスタブ付き）"
+                            data-images='["assets/202/S__4653096_0.jpg","assets/202/S__4653097_0.jpg","assets/202/S__4653098_0.jpg","assets/202/S__4653099_0.jpg","assets/202/S__4653100_0.jpg","assets/202/S__4653101_0.jpg","assets/202/S__4653102_0.jpg","assets/202/S__4653103_0.jpg"]'>
+                            <i data-lucide="images"></i> 写真をもっと見る
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="serif text-2xl mb-2">4人部屋（バスタブ付き）（2階202号室）</h3>
+                        <div class="room-meta mb-6">
+                            <span><i data-lucide="maximize"></i> 50 m²</span>
+                            <span><i data-lucide="users"></i> 4名</span>
+                            <span><i data-lucide="bed"></i> ダブルベッド2台</span>
+                            <span><i data-lucide="mountain-snow"></i> シティビュー</span>
+                        </div>
+                        <div class="card-cta-group">
+                            <span class="cta-label">今すぐ予約</span>
+                            <div class="booking-links">
+                                <a href="https://www.booking.com/hotel/tw/chen-xin-chen-yi-er-guan.ja.html"
+                                    target="_blank" class="booking-btn">Booking</a>
+                                <a href="https://www.agoda.com/ja-jp/h30053903/hotel/yilan-tw.html" target="_blank"
+                                    class="agoda-btn">Agoda</a>
+                                <a href="https://jp.trip.com/hotels/cityname-hotel-detail-133686693/hotelname/"
+                                    target="_blank" class="trip-btn">Trip.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Platforms & Reviews -->
+    <section class="booking-section section-padding bg-slate-50/50" id="booking">
+        <i data-lucide="calendar-check" class="bg-deco-icon bg-deco-2"></i>
+        <i data-lucide="sparkle" class="bg-deco-icon bg-deco-3"></i>
+        <i data-lucide="coffee" class="bg-deco-icon bg-deco-7"></i>
+        <i data-lucide="utensils" class="bg-deco-icon bg-deco-4"></i>
+        <!-- Marquee Reviews -->
+        <div class="marquee-wrapper fade-up" data-delay="0.1" style="margin-bottom: 60px;">
+            <div class="marquee-track">
+                <!-- Group 1 -->
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Hsu</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">大通りや老街まで徒歩で楽々。家族旅行にとても便利な宿です！</p><span class="room-type">4人部屋（バスタブ付き）</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">芓臻</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">部屋がとても清潔で、近くで買い物も便利。おすすめです！</p><span class="room-type">4人部屋（テラス付き）</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Peiying</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">浴槽が広くて温泉体験は最高。カップルの休日にぴったりです。</p><span class="room-type">スタンダードダブルルーム</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">亭予</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">とても快適な滞在でした。オーナーが親切で距離感がなく、ペットOKも高ポイント！</p><span class="room-type">スタンダードダブルルーム</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Jackymao</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">ペットフレンドリーなだけでなく、部屋が広く専用の大きな湯船まで。最高です！</p><span class="room-type">4人部屋（テラス付き）</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">葛さん</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">お湯張りが速くて気持ちいい。宿を出ればすぐ商店街で、立地は抜群です。</p><span class="room-type">4人部屋（テラス付き）</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">奕縣</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">雰囲気も環境も心地よく、心から寛げる温泉宿です。</p><span class="room-type">スタンダードダブルルーム</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Elaine</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">快適で広々。ペットフレンドリーな点は特に称賛したい！</p><span class="room-type">ダブルルーム（専用バスルーム付き）</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">喻喬</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">広いベッドで快適、部屋は清潔で無臭、湯囲溝もすぐ近く！</p><span class="room-type">ダブルルーム（専用バスルーム付き）</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Chang</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">広く清潔で、小さな和室スペースで寛げます。子連れ旅行に最適！</p><span class="room-type">4人部屋（バスタブ付き）</span>
+                </div>
+                <!-- Group 2 (Clone for infinite marquee) -->
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Hsu</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">大通りや老街まで徒歩で楽々。家族旅行にとても便利な宿です！</p><span class="room-type">4人部屋（バスタブ付き）</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">芓臻</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">部屋がとても清潔で、近くで買い物も便利。おすすめです！</p><span class="room-type">4人部屋（テラス付き）</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Peiying</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">浴槽が広くて温泉体験は最高。カップルの休日にぴったりです。</p><span class="room-type">スタンダードダブルルーム</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">亭予</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">とても快適な滞在でした。オーナーが親切で距離感がなく、ペットOKも高ポイント！</p><span class="room-type">スタンダードダブルルーム</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Jackymao</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">ペットフレンドリーなだけでなく、部屋が広く専用の大きな湯船まで。最高です！</p><span class="room-type">4人部屋（テラス付き）</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">葛さん</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">お湯張りが速くて気持ちいい。宿を出ればすぐ商店街で、立地は抜群です。</p><span class="room-type">4人部屋（テラス付き）</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">奕縣</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">雰囲気も環境も心地よく、心から寛げる温泉宿です。</p><span class="room-type">スタンダードダブルルーム</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Elaine</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">快適で広々。ペットフレンドリーな点は特に称賛したい！</p><span class="room-type">ダブルルーム（専用バスルーム付き）</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">喻喬</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">広いベッドで快適、部屋は清潔で無臭、湯囲溝もすぐ近く！</p><span class="room-type">ダブルルーム（専用バスルーム付き）</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Chang</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">広く清潔で、小さな和室スペースで寛げます。子連れ旅行に最適！</p><span class="room-type">4人部屋（バスタブ付き）</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-20 mt-10 fade-up">
+            <div class="booking-card">
+                <div class="mb-16 fade-up" style="text-align: center;">
+                    <h2 class="serif text-4xl md:text-5xl" style="letter-spacing: 0.1em; color: var(--primary-text);">
+                        オンライン予約</h2>
+                </div>
+                <div class="platform-group justify-center">
+                    <a href="https://www.booking.com/hotel/tw/chen-xin-chen-yi-er-guan.ja.html" target="_blank"
+                        class="platform-btn booking-com shadow-sm hover:shadow-xl">
+                        <span>Booking.com</span>
+                        <i data-lucide="external-link"></i>
+                    </a>
+                    <a href="https://www.agoda.com/ja-jp/h30053903/hotel/yilan-tw.html" target="_blank"
+                        class="platform-btn agoda shadow-sm hover:shadow-xl">
+                        <span>Agoda</span>
+                        <i data-lucide="external-link"></i>
+                    </a>
+                    <a href="https://jp.trip.com/hotels/cityname-hotel-detail-133686693/hotelname/" target="_blank"
+                        class="platform-btn trip shadow-sm hover:shadow-xl">
+                        <span>Trip.com</span>
+                        <i data-lucide="external-link"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- Notice + FAQ Section -->
+    <section class="faq-section section-padding" id="faq">
+        <i data-lucide="help-circle" class="bg-deco-icon bg-deco-4"></i>
+        <i data-lucide="bath" class="bg-deco-icon bg-deco-5"></i>
+        <i data-lucide="bubbles" class="bg-deco-icon bg-deco-8"></i>
+        <i data-lucide="towel-rack" class="bg-deco-icon bg-deco-9"></i>
+        <div class="container">
+
+            <!-- Notice Section Header -->
+            <div class="mb-12 text-center fade-up">
+                <span
+                    class="inline-block px-4 py-1.5 bg-brand-accent/20 text-brand-text-primary text-[10px] font-bold tracking-widest uppercase rounded-full mb-4"
+                    style="background: rgba(234, 190, 183, 0.25); color: var(--primary-text); font-family: var(--sans-font);">
+                    GUIDELINES
+                </span>
+                <h3 class="serif text-3xl md:text-5xl font-bold mb-5"
+                    style="color: var(--primary-text); letter-spacing: 0.1em; line-height: 1.2;">
+                    ご宿泊の注意事項
+                </h3>
+                <p class="body-text opacity-70"
+                    style="letter-spacing: 0.05em; font-size: 1rem; max-width: 600px; margin: 0 auto;">
+                    快適にお過ごしいただくため、チェックイン前に以下をご確認ください
+                </p>
+            </div>
+
+            <!-- House Notes -->
+            <div class="notice-card fade-up">
+                <div class="notice-body">
+                    <div class="notice-item">
+                        <i data-lucide="concierge-bell" class="notice-lucide-icon"></i>
+                        <div>
+                            <strong>当館にはエレベーターがございません</strong>。2〜3階へは階段をご利用ください。<br>
+                            お荷物の積み下ろしの間、正面玄関前に一時停車が可能です（隣の日本料理店の入口を塞がないようお願いいたします）。<br>
+                            フロントはなく、セルフチェックイン方式です。ご不明な点は <strong>LINE公式アカウント</strong>、またはお電話 <strong>0965-832-882</strong> までご連絡ください。
+                        </div>
+                    </div>
+                    <div class="notice-item">
+                        <i data-lucide="concierge-bell" class="notice-lucide-icon"></i>
+                        <div>
+                            <strong>お忘れ物・紛失物について</strong><br>
+                            お忘れ物の郵送対応や貴重品紛失の責任は負いかねます。ご滞在中は貴重品を各自で管理し、お荷物のまとめ忘れにご注意くださいますようお願いいたします。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Title -->
+            <div class="faq-title-block fade-up" style="text-align:center; margin: 80px 0 48px;">
+                <h2 class="serif" style="font-size: 2.2rem; letter-spacing: 0.12em; color: var(--primary-text);">よくあるご質問
+                </h2>
+                <p style="color: var(--secondary-text); margin-top: 12px; font-size: 0.95rem; letter-spacing: 0.05em;">
+                    FAQ</p>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class="faq-list fade-up">
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>宿の住所はどこですか？</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>宜蘭県礁渓郷徳陽路 95 号。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>駐車場のご案内</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>「俥亭駐車場-礁渓湯囲溝」</strong>（当館宿泊者は無料）<br>
+                                    空いているスペースに自由に駐車可（指定なし）<br>
+                                    期間内は入出庫自由<br>
+                                    駐車可能時間：<br>
+                                    （チェックイン日）正午12時から<br>
+                                    （チェックアウト日）正午12時まで<br>
+                                    精算機での入出庫登録は不要<br>
+                                    📌<strong>チェックアウト後、12時を過ぎた駐車は自己負担となります。</strong></p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>朝食の時間・場所・食事券の使い方</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>朝食店は<strong>木曜定休</strong>です（定休日に当たる場合、当日の朝食券の料金を宿泊料金から差し引きます）。<br>
+                            営業時間：<strong>06:00 – 12:30</strong><br>
+                            ダブルルームは2枚、4人部屋は4枚（1枚＝現金券60元）。<br><br>
+                            場所：当館を出て右へ、右手にある紫色の看板「<strong>城市漢堡（City Burger）</strong>」。<br>
+                            店名「辰馨辰懿」とお部屋番号をお伝えいただくとお食事できます。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>ペット同伴について</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>🐾 当館は<strong>ペットフレンドリー</strong>。デポジット不要でペットと一緒にご宿泊いただけます。<br><br>
+                            お願い：浴槽・ベッドに入れないこと、粗相をさせないこと、清潔を保つこと。<br>
+                            違反があった場合、清掃・損傷費用として <strong>500〜1,000元</strong>を申し受けます。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>バイクや車をレンタルしたい</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>提携業者：<strong>伯達聯合租車（レンタカー）</strong><br>
+                            住所：礁渓郷中山路二段 167 号<br><br>
+                            「辰馨辰懿温泉会館」の宿泊とお伝えいただくと、バイク <strong>50元</strong>引き、車 <strong>200元</strong>引きになります。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>チェックイン・チェックアウトの時間</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>🔑 <strong>チェックイン：15:00</strong>（お早めの到着をご希望の場合は事前にお電話ください。当日の空き状況によりご案内します）。<br>
+                            🔑 <strong>チェックアウト：翌日 11:00 まで</strong>。鍵は玄関の靴箱の上に置き、カードキーは差したままで結構です（退室時はドアを施錠しないでください）。<br><br>
+                            📌 鍵・カードキーを紛失された場合は 500 元を申し受けます。<br>
+                            📌 駐車場をご利用のお客様は 12:00 まで駐車可能です（特別サービス）。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>お振込みについて</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>合作金庫銀行（006）<br>
+                            口座番号：<strong>5425988017549</strong><br><br>
+                            お振込み後、確認のため口座番号の下5桁をお知らせください。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>電話やLINEで予約できますか？</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>はい。公式 <strong>LINEアカウント</strong>から手順に沿ってご予約いただくことをおすすめします。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>バイクの駐輪場所</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>バイクは当館入口前（店の入口や通行の妨げにならない範囲で）、または向かいの<strong>福岡バイク駐輪スペース</strong>をご利用ください。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>ベビーバスはありますか？</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>ございます。<strong>2階の収納棚の上</strong>に置いてありますので、ご自由にお使いください。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>全室に温泉浴槽はありますか？</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>全客室に<strong>岩造りの浴槽</strong>があり、温泉をお楽しみいただけます。<br><br>
+                            当館は正式な温泉利用許可を取得しており、泉質は<strong>炭酸水素塩泉</strong>（通称「美人の湯」）。長く浸かっても肌がふやけず、入るほどに美しくなります ✨</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>エキストラベッドは追加できますか？</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>エキストラベッドの追加はできません。客室の定員に合わせてご宿泊ください。<strong>0〜6歳のお子様は人数に含まれません</strong>。</p>
+                    </div>
+                </div>
+
+            </div><!-- /faq-list -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section" id="footer">
+        <i data-lucide="map-pin" class="bg-deco-icon bg-deco-1"></i>
+        <i data-lucide="phone" class="bg-deco-icon bg-deco-5"></i>
+        <div class="container py-20">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="mb-4">
+                        <span class="footer-logo-text">辰馨辰懿温泉会館</span>
+                    </div>
+                    <p class="body-text opacity-80" style="max-width: 320px;">宜蘭・礁渓で最も優雅な、モダン温泉とミニマル美学の宿。</p>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 class="serif text-xl border-bottom-accent pb-4 mb-8">お問い合わせ</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <i data-lucide="phone"></i>
+                            <div>
+                                <span class="block font-bold mb-1">ご予約専用 0965-832-882</span>
+                                <span class="block opacity-70 text-sm">LINE公式アカウントからのご連絡がおすすめです</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i data-lucide="map-pin"></i>
+                            <div>
+                                <span class="block">宜蘭県礁渓郷徳陽路 95 号</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4 class="serif text-xl border-bottom-accent pb-4 mb-8">公式SNS</h4>
+                    <div class="footer-social-icons">
+                        <a href="https://www.facebook.com/sincereresort/" target="_blank" class="social-icon-btn"
+                            aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/sincere_resort/" target="_blank" class="social-icon-btn"
+                            aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://www.threads.com/@sincere_resort" target="_blank" class="social-icon-btn"
+                            aria-label="Threads">
+                            <svg viewBox="0 0 192 192" width="20" height="20" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0956 96.9879 60.1301 116.292C60.6536 126.115 65.4535 134.498 73.7135 140.011C80.8264 144.663 89.9917 146.938 99.5058 146.423C111.993 145.74 121.894 140.709 128.854 131.492C134.232 124.333 137.608 115.131 139.093 103.527C145.78 107.457 150.73 112.92 153.336 119.505C157.842 130.931 158.128 149.688 144.396 163.42C132.612 175.204 118.468 180.458 96.9974 180.623C73.2031 180.44 55.0479 173.263 43.0819 159.298C31.7649 146.115 25.9169 126.886 25.7499 102.066C25.9169 77.2458 31.7649 58.0162 43.0819 44.8335C55.0479 30.8686 73.2031 23.6914 96.9974 23.5084C120.956 23.6928 139.338 30.9124 151.526 44.929C157.476 51.7764 161.913 60.4435 164.748 70.6518L180.18 66.2774C176.768 53.7527 171.275 42.9799 163.727 34.1073C148.979 17.0385 127.359 8.01467 97.0995 7.79199H96.9003C66.6596 8.01467 45.0668 17.0385 30.3501 34.1073C17.2066 49.5379 10.4233 71.6608 10.2166 99.972L10.2139 102.066L10.2166 104.16C10.4233 132.471 17.2066 154.594 30.3501 170.025C45.0668 187.093 66.6596 196.117 96.9003 196.34H97.0995C124.588 196.132 144.018 188.968 156.727 176.26C173.312 159.677 172.791 138.384 167.2 124.215C163.13 113.977 155.785 105.597 145.38 99.9772C144.093 96.0325 142.4 92.3719 140.324 89.0526L141.537 88.9883Z" />
+                            </svg>
+                        </a>
+                        <a href="https://line.me/R/ti/p/@340omfsh" target="_blank" class="social-icon-btn"
+                            aria-label="Line">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom custom-copyright">
+                &copy; 辰馨辰懿温泉会館 Sincere Hot Spring &amp; Resort. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Gallery Lightbox Modal -->
+    <div class="gallery-modal" id="gallery-modal" role="dialog" aria-modal="true">
+        <button class="gallery-modal-close" id="gallery-modal-close" aria-label="閉じる">&times;</button>
+        <div class="gallery-modal-header">
+            <span class="gallery-room-name" id="gallery-room-name"></span>
+            <span class="gallery-counter" id="gallery-counter"></span>
+        </div>
+        <div class="gallery-modal-body">
+            <button class="gallery-nav gallery-prev" id="gallery-prev" aria-label="前へ">
+                <i data-lucide="chevron-left"></i>
+            </button>
+            <div class="gallery-img-wrap">
+                <img src="" alt="客室写真" id="gallery-main-img">
+            </div>
+            <button class="gallery-nav gallery-next" id="gallery-next" aria-label="次へ">
+                <i data-lucide="chevron-right"></i>
+            </button>
+        </div>
+        <div class="gallery-thumbs" id="gallery-thumbs"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

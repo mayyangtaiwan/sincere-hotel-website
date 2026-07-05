@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sincere Hot Spring Resort｜Official Website</title>
+    <meta name="description" content="Sincere Hot Spring Resort in Jiaoxi, Yilan blends modern luxury with Zen aesthetics. Natural sodium bicarbonate hot spring baths, curated breakfast, and city-view rooms. Book your relaxing Jiaoxi hot spring getaway.">
+
+    <!-- Open Graph / Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sincere Hot Spring Resort｜Official Website">
+    <meta property="og:description" content="Sincere Hot Spring Resort in Jiaoxi, Yilan blends modern luxury with Zen aesthetics. Natural sodium bicarbonate hot spring baths, curated breakfast, and city-view rooms. Book your relaxing Jiaoxi hot spring getaway.">
+    <meta property="og:image" content="assets/hero.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="900">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sincere Hot Spring Resort｜Official Website">
+    <meta name="twitter:description" content="Sincere Hot Spring Resort in Jiaoxi, Yilan blends modern luxury with Zen aesthetics. Natural sodium bicarbonate hot spring baths, curated breakfast, and city-view rooms. Book your relaxing Jiaoxi hot spring getaway.">
+    <meta name="twitter:image" content="assets/hero.png">
+
+    <!-- Standard Thumbnail for Some Search Platforms -->
+    <meta name="thumbnail" content="assets/hero.png">
+
+    <!-- JSON-LD Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "Sincere Hot Spring Resort",
+      "image": "assets/hero.png",
+      "description": "Sincere Hot Spring Resort in Jiaoxi, Yilan blends modern luxury with Zen aesthetics. Natural sodium bicarbonate hot spring baths, curated breakfast, and city-view rooms. Book your relaxing Jiaoxi hot spring getaway.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "No. 95, Deyang Road",
+        "addressLocality": "Jiaoxi Township",
+        "addressRegion": "Yilan County",
+        "postalCode": "262",
+        "addressCountry": "TW"
+      },
+      "telephone": "+886-965-832-882"
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Noto+Serif+TC:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="assets/favicon-144.png">
+    <link rel="apple-touch-icon" href="assets/favicon-144.png">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo logo-group mb-0">
+                <img src="assets/icon.png" alt="Icon" class="brand-icon">
+                <img src="assets/logo.png" alt="Sincere Hot Spring Resort" class="brand-text">
+            </div>
+            <div class="nav-links desktop-only">
+                <a href="#intro">About Us</a>
+                <a href="#room-types">Rooms</a>
+                <a href="#footer">Contact</a>
+            </div>
+            <div class="nav-lang desktop-only">
+                <div class="lang-dropdown">
+                    <button class="lang-dropdown-btn" aria-label="Change language" aria-haspopup="true">
+                        <i data-lucide="globe"></i>EN<i data-lucide="chevron-down" class="lang-chevron"></i>
+                    </button>
+                    <div class="lang-dropdown-menu">
+                        <a href="index.html">中文</a>
+                        <a href="ja.html">日本語</a>
+                        <a href="ko.html">한국어</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-toggle" id="menu-btn">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobile-nav">
+        <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close">&times;</button>
+        <nav class="mobile-nav-links">
+            <a href="#intro" class="mobile-nav-link">About Us</a>
+            <a href="#room-types" class="mobile-nav-link">Rooms</a>
+            <a href="#footer" class="mobile-nav-link">Contact</a>
+            <div class="mobile-lang-group">
+                <a href="index.html" class="mobile-nav-link lang-switch">中文</a>
+                <a href="ja.html" class="mobile-nav-link lang-switch">日本語</a>
+                <a href="ko.html" class="mobile-nav-link lang-switch">한국어</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Side CTA -->
+    <div class="side-cta">
+        <a href="#booking" class="cta-vertical">
+            <span>Book Now</span>
+            <i data-lucide="calendar-days"></i>
+        </a>
+        <a href="https://wa.me/886965832882" target="_blank" class="line-float-btn"
+            aria-label="WhatsApp">
+            <svg class="whatsapp-icon-svg" viewBox="0 0 24 24" fill="#25D366" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+        </a>
+    </div>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-bg">
+            <img src="assets/hero.png" alt="Sincere Hotel Hero">
+            <div class="hero-overlay"></div>
+        </div>
+        <!-- Decorative Icons -->
+        <i data-lucide="sparkles" class="bg-deco-icon bg-deco-1"></i>
+        <i data-lucide="waves" class="bg-deco-icon bg-deco-2"></i>
+        <i data-lucide="sparkle" class="bg-deco-icon bg-deco-6"></i>
+        <i data-lucide="moon-star" class="bg-deco-icon bg-deco-7"></i>
+
+        <div class="hero-content fade-up flex flex-col items-center justify-center">
+            <h1 class="script-font text-white" style="margin-bottom: 16px;">Sincere Hotel</h1>
+            <h2 class="serif text-white"
+                style="letter-spacing: 0.35em; font-size: 1.4rem; margin-bottom: 60px; margin-left: 0.35em; opacity: 0.95;">
+                Jiaoxi・Hot Spring Resort</h2>
+            <a href="#booking" class="btn-primary square-btn">Book Now</a>
+        </div>
+        <div class="scroll-down">
+            <div class="line"></div>
+            <span class="uppercase tracking-widest text-[10px]">Scroll</span>
+        </div>
+    </section>
+
+    <!-- Introduction & Amenities (Elegant Layout) -->
+    <section class="elegant-intro-section" id="intro" style="padding: 120px 0;">
+        <i data-lucide="leaf" class="bg-deco-icon bg-deco-4"></i>
+        <i data-lucide="flower-2" class="bg-deco-icon bg-deco-3"></i>
+        <i data-lucide="leaf" class="bg-deco-icon bg-deco-8"></i>
+        <i data-lucide="flower" class="bg-deco-icon bg-deco-9"></i>
+        <div class="container relative mt-10" id="amenities">
+            <div class="elegant-header fade-up">
+                <div class="vertical-title shadow-text serif" style="writing-mode: horizontal-tb; font-size: 36px;">
+                    About<br>Us
+                </div>
+                <div class="elegant-text">
+                    <p>Sincere Hot Spring &amp; Resort is located on Deyang Road in Jiaoxi Township, Yilan County,
+                        within easy walking distance of Jiaoxi Old Street and Tangweigou Hot Spring Park. Every room
+                        features a private stone soaking bath fed by certified natural sodium bicarbonate spring water
+                        — known as the "Beauty Bath" — which leaves your skin soft and smooth no matter how long you
+                        soak, making it one of the most beloved spring waters in Jiaoxi.
+                    </p>
+                    <p>We offer four curated room types, from cozy double rooms to a spacious quadruple suite with a
+                        private terrace. The entire property uses smart self check-in, so you enjoy complete freedom
+                        and privacy throughout your stay. Pets are warmly welcomed, and we partner with nearby
+                        breakfast shops, parking lots, and local vehicle rental services to make every Jiaoxi journey
+                        effortless.
+                    </p>
+                </div>
+            </div>
+
+            <div class="elegant-gallery fade-up" data-delay="0.2">
+                <div class="elegant-gallery-item"><img src="assets/spot.png" alt="Natural hot spring scenery"></div>
+                <div class="elegant-gallery-item"><img src="assets/building.png" alt="Premium accommodation"></div>
+                <div class="elegant-gallery-item"><img src="assets/waterfall.png" alt="Japanese-style bath facilities"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Types Showcase -->
+    <section class="rooms-section section-padding" id="room-types">
+        <i data-lucide="mountains" class="bg-deco-icon bg-deco-1"></i>
+        <i data-lucide="thermometer-sun" class="bg-deco-icon bg-deco-5"></i>
+        <i data-lucide="mountain" class="bg-deco-icon bg-deco-10"></i>
+        <i data-lucide="waves" class="bg-deco-icon bg-deco-6"></i>
+        <div class="container">
+            <div class="mb-16 fade-up" style="text-align: center;">
+                <h2 class="serif text-4xl md:text-5xl" style="letter-spacing: 0.1em; color: var(--primary-text);">Our Rooms
+                </h2>
+            </div>
+
+            <div class="room-grid">
+                <!-- Room Card 1: Double Room with Private Bathroom (201) -->
+                <div class="room-card glass fade-up">
+                    <div class="card-img">
+                        <img src="assets/201/S__4653092_0.jpg" alt="Double Room with Private Bathroom">
+                        <button class="card-gallery-btn" aria-label="View more photos" data-room="Double Room with Private Bathroom"
+                            data-images='["assets/201/S__4653083_0.jpg","assets/201/S__4653084_0.jpg","assets/201/S__4653085_0.jpg","assets/201/S__4653086_0.jpg","assets/201/S__4653087_0.jpg","assets/201/S__4653088_0.jpg","assets/201/S__4653089_0.jpg","assets/201/S__4653090_0.jpg","assets/201/S__4653091_0.jpg","assets/201/S__4653092_0.jpg","assets/201/S__4653093.jpg"]'>
+                            <i data-lucide="images"></i> View More Photos
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="serif text-2xl mb-2">Double Room with Private Bathroom (Room 201, 2F)</h3>
+                        <div class="room-meta mb-6">
+                            <span><i data-lucide="maximize"></i> 33 m²</span>
+                            <span><i data-lucide="users"></i> 2 Guests</span>
+                            <span><i data-lucide="bed"></i> 1 Double Bed</span>
+                            <span><i data-lucide="mountain-snow"></i> City View</span>
+                        </div>
+                        <div class="card-cta-group">
+                            <span class="cta-label">Book Now</span>
+                            <div class="booking-links">
+                                <a href="https://www.booking.com/hotel/tw/chen-xin-chen-yi-er-guan.en-gb.html"
+                                    target="_blank" class="booking-btn">Booking</a>
+                                <a href="https://www.agoda.com/en-gb/h30053903/hotel/yilan-tw.html" target="_blank"
+                                    class="agoda-btn">Agoda</a>
+                                <a href="https://www.trip.com/hotels/cityname-hotel-detail-133686693/hotelname/"
+                                    target="_blank" class="trip-btn">Trip.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Card 2: Standard Double Room (301) -->
+                <div class="room-card glass fade-up" data-delay="0.1">
+                    <div class="card-img">
+                        <img src="assets/301/S__4653109_0.jpg" alt="Standard Double Room">
+
+                        <button class="card-gallery-btn" aria-label="View more photos" data-room="Standard Double Room"
+                            data-images='["assets/301/S__4653106_0.jpg","assets/301/S__4653107_0.jpg","assets/301/S__4653108_0.jpg","assets/301/S__4653109_0.jpg","assets/301/S__4653110_0.jpg","assets/301/S__4653111_0.jpg","assets/301/S__4653112_0.jpg","assets/301/S__4653113_0.jpg"]'>
+                            <i data-lucide="images"></i> View More Photos
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="serif text-2xl mb-2">Standard Double Room (Room 301, 3F)</h3>
+                        <div class="room-meta mb-6">
+                            <span><i data-lucide="maximize"></i> 30 m²</span>
+                            <span><i data-lucide="users"></i> 2 Guests</span>
+                            <span><i data-lucide="bed"></i> 1 Double Bed</span>
+                            <span><i data-lucide="mountain-snow"></i> City View</span>
+                        </div>
+                        <div class="card-cta-group">
+                            <span class="cta-label">Book Now</span>
+                            <div class="booking-links">
+                                <a href="https://www.booking.com/hotel/tw/chen-xin-chen-yi-er-guan.en-gb.html"
+                                    target="_blank" class="booking-btn">Booking</a>
+                                <a href="https://www.agoda.com/en-gb/h30053903/hotel/yilan-tw.html" target="_blank"
+                                    class="agoda-btn">Agoda</a>
+                                <a href="https://www.trip.com/hotels/cityname-hotel-detail-133686693/hotelname/"
+                                    target="_blank" class="trip-btn">Trip.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Card 3: Quadruple Room with Terrace (302) -->
+                <div class="room-card glass fade-up" data-delay="0.2">
+                    <div class="card-img">
+                        <img src="assets/302/S__4653116_0.jpg" alt="Quadruple Room with Terrace">
+
+                        <button class="card-gallery-btn" aria-label="View more photos" data-room="Quadruple Room with Terrace"
+                            data-images='["assets/302/S__4653116_0.jpg","assets/302/S__4653117_0.jpg","assets/302/S__4653118_0.jpg","assets/302/S__4653119_0.jpg","assets/302/S__4653120_0.jpg","assets/302/S__4653121_0.jpg","assets/302/S__4653122_0.jpg","assets/302/S__4653123_0.jpg","assets/302/S__4653124_0.jpg","assets/302/S__4653125.jpg"]'>
+                            <i data-lucide="images"></i> View More Photos
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="serif text-2xl mb-2">Quadruple Room with Terrace (Room 302, 3F)</h3>
+                        <div class="room-meta mb-6">
+                            <span><i data-lucide="maximize"></i> 50 m²</span>
+                            <span><i data-lucide="users"></i> 4 Guests</span>
+                            <span><i data-lucide="bed"></i> 2 Double Beds</span>
+                            <span><i data-lucide="mountain-snow"></i> City View</span>
+                        </div>
+                        <div class="card-cta-group">
+                            <span class="cta-label">Book Now</span>
+                            <div class="booking-links">
+                                <a href="https://www.booking.com/hotel/tw/chen-xin-chen-yi-er-guan.en-gb.html"
+                                    target="_blank" class="booking-btn">Booking</a>
+                                <a href="https://www.agoda.com/en-gb/h30053903/hotel/yilan-tw.html" target="_blank"
+                                    class="agoda-btn">Agoda</a>
+                                <a href="https://www.trip.com/hotels/cityname-hotel-detail-133686693/hotelname/"
+                                    target="_blank" class="trip-btn">Trip.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Card 4: Quadruple Room with Bathtub (202) -->
+                <div class="room-card glass fade-up" data-delay="0.3">
+                    <div class="card-img">
+                        <img src="assets/202/S__4653102_0.jpg" alt="Quadruple Room with Bathtub">
+
+                        <button class="card-gallery-btn" aria-label="View more photos" data-room="Quadruple Room with Bathtub"
+                            data-images='["assets/202/S__4653096_0.jpg","assets/202/S__4653097_0.jpg","assets/202/S__4653098_0.jpg","assets/202/S__4653099_0.jpg","assets/202/S__4653100_0.jpg","assets/202/S__4653101_0.jpg","assets/202/S__4653102_0.jpg","assets/202/S__4653103_0.jpg"]'>
+                            <i data-lucide="images"></i> View More Photos
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="serif text-2xl mb-2">Quadruple Room with Bathtub (Room 202, 2F)</h3>
+                        <div class="room-meta mb-6">
+                            <span><i data-lucide="maximize"></i> 50 m²</span>
+                            <span><i data-lucide="users"></i> 4 Guests</span>
+                            <span><i data-lucide="bed"></i> 2 Double Beds</span>
+                            <span><i data-lucide="mountain-snow"></i> City View</span>
+                        </div>
+                        <div class="card-cta-group">
+                            <span class="cta-label">Book Now</span>
+                            <div class="booking-links">
+                                <a href="https://www.booking.com/hotel/tw/chen-xin-chen-yi-er-guan.en-gb.html"
+                                    target="_blank" class="booking-btn">Booking</a>
+                                <a href="https://www.agoda.com/en-gb/h30053903/hotel/yilan-tw.html" target="_blank"
+                                    class="agoda-btn">Agoda</a>
+                                <a href="https://www.trip.com/hotels/cityname-hotel-detail-133686693/hotelname/"
+                                    target="_blank" class="trip-btn">Trip.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Platforms & Reviews -->
+    <section class="booking-section section-padding bg-slate-50/50" id="booking">
+        <i data-lucide="calendar-check" class="bg-deco-icon bg-deco-2"></i>
+        <i data-lucide="sparkle" class="bg-deco-icon bg-deco-3"></i>
+        <i data-lucide="coffee" class="bg-deco-icon bg-deco-7"></i>
+        <i data-lucide="utensils" class="bg-deco-icon bg-deco-4"></i>
+        <!-- Marquee Reviews -->
+        <div class="marquee-wrapper fade-up" data-delay="0.1" style="margin-bottom: 60px;">
+            <div class="marquee-track">
+                <!-- Group 1 -->
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Hsu</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">Easy walking distance to the main street and old street — an extremely convenient choice for families!</p><span class="room-type">Quadruple Room with Bathtub</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Tzu-Chen</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">The room was impressively clean and shopping nearby is very convenient. Highly recommended!</p><span class="room-type">Quadruple Room with Terrace</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Peiying</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">The bath is huge and the hot spring experience was wonderful — perfect for a couples' getaway.</p><span class="room-type">Standard Double Room</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Ting-Yu</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">A very comfortable stay. The owner is warm and friendly, and the pet-friendly policy is a big plus!</p><span class="room-type">Standard Double Room</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Jackymao</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">Besides being pet-friendly, the room is spacious with its own huge soaking pool. Amazing!</p><span class="room-type">Quadruple Room with Terrace</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Mr. Ge</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">The tub fills quickly and feels wonderful. Step outside and you're right on the shopping street.</p><span class="room-type">Quadruple Room with Terrace</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Yi-Hsien</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">Relaxing atmosphere and comfortable surroundings — a hot spring resort that puts you completely at ease.</p><span class="room-type">Standard Double Room</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Elaine</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">Comfortable and spacious. The pet-friendly policy deserves special praise!</p><span class="room-type">Double Room with Private Bathroom</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Yu-Chiao</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">Spacious with a very comfortable bed, clean and odor-free, and super close to Tangweigou Park!</p><span class="room-type">Double Room with Private Bathroom</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Chang</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">Spacious and clean, with a cozy tatami nook to relax in — great for families with kids!</p><span class="room-type">Quadruple Room with Bathtub</span>
+                </div>
+                <!-- Group 2 (Clone for infinite marquee) -->
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Hsu</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">Easy walking distance to the main street and old street — an extremely convenient choice for families!</p><span class="room-type">Quadruple Room with Bathtub</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Tzu-Chen</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">The room was impressively clean and shopping nearby is very convenient. Highly recommended!</p><span class="room-type">Quadruple Room with Terrace</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Peiying</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">The bath is huge and the hot spring experience was wonderful — perfect for a couples' getaway.</p><span class="room-type">Standard Double Room</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Ting-Yu</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">A very comfortable stay. The owner is warm and friendly, and the pet-friendly policy is a big plus!</p><span class="room-type">Standard Double Room</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Jackymao</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">Besides being pet-friendly, the room is spacious with its own huge soaking pool. Amazing!</p><span class="room-type">Quadruple Room with Terrace</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Mr. Ge</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">The tub fills quickly and feels wonderful. Step outside and you're right on the shopping street.</p><span class="room-type">Quadruple Room with Terrace</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Yi-Hsien</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">Relaxing atmosphere and comfortable surroundings — a hot spring resort that puts you completely at ease.</p><span class="room-type">Standard Double Room</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Elaine</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">Comfortable and spacious. The pet-friendly policy deserves special praise!</p><span class="room-type">Double Room with Private Bathroom</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Yu-Chiao</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">Spacious with a very comfortable bed, clean and odor-free, and super close to Tangweigou Park!</p><span class="room-type">Double Room with Private Bathroom</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Chang</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">Spacious and clean, with a cozy tatami nook to relax in — great for families with kids!</p><span class="room-type">Quadruple Room with Bathtub</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-20 mt-10 fade-up">
+            <div class="booking-card">
+                <div class="mb-16 fade-up" style="text-align: center;">
+                    <h2 class="serif text-4xl md:text-5xl" style="letter-spacing: 0.1em; color: var(--primary-text);">
+                        Book Online</h2>
+                </div>
+                <div class="platform-group justify-center">
+                    <a href="https://www.booking.com/hotel/tw/chen-xin-chen-yi-er-guan.en-gb.html" target="_blank"
+                        class="platform-btn booking-com shadow-sm hover:shadow-xl">
+                        <span>Booking.com</span>
+                        <i data-lucide="external-link"></i>
+                    </a>
+                    <a href="https://www.agoda.com/en-gb/h30053903/hotel/yilan-tw.html" target="_blank"
+                        class="platform-btn agoda shadow-sm hover:shadow-xl">
+                        <span>Agoda</span>
+                        <i data-lucide="external-link"></i>
+                    </a>
+                    <a href="https://www.trip.com/hotels/cityname-hotel-detail-133686693/hotelname/" target="_blank"
+                        class="platform-btn trip shadow-sm hover:shadow-xl">
+                        <span>Trip.com</span>
+                        <i data-lucide="external-link"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- Notice + FAQ Section -->
+    <section class="faq-section section-padding" id="faq">
+        <i data-lucide="help-circle" class="bg-deco-icon bg-deco-4"></i>
+        <i data-lucide="bath" class="bg-deco-icon bg-deco-5"></i>
+        <i data-lucide="bubbles" class="bg-deco-icon bg-deco-8"></i>
+        <i data-lucide="towel-rack" class="bg-deco-icon bg-deco-9"></i>
+        <div class="container">
+
+            <!-- Notice Section Header -->
+            <div class="mb-12 text-center fade-up">
+                <span
+                    class="inline-block px-4 py-1.5 bg-brand-accent/20 text-brand-text-primary text-[10px] font-bold tracking-widest uppercase rounded-full mb-4"
+                    style="background: rgba(234, 190, 183, 0.25); color: var(--primary-text); font-family: var(--sans-font);">
+                    GUIDELINES
+                </span>
+                <h3 class="serif text-3xl md:text-5xl font-bold mb-5"
+                    style="color: var(--primary-text); letter-spacing: 0.1em; line-height: 1.2;">
+                    Guest Notice &amp; House Rules
+                </h3>
+                <p class="body-text opacity-70"
+                    style="letter-spacing: 0.05em; font-size: 1rem; max-width: 600px; margin: 0 auto;">
+                    Please read the following before check-in to ensure a smooth and pleasant stay
+                </p>
+            </div>
+
+            <!-- House Notes -->
+            <div class="notice-card fade-up">
+                <div class="notice-body">
+                    <div class="notice-item">
+                        <i data-lucide="concierge-bell" class="notice-lucide-icon"></i>
+                        <div>
+                            <strong>There is no elevator</strong> — the 2nd and 3rd floors are reached by stairs.<br>
+                            You may briefly stop your car at the front door to unload luggage (please don't block the entrance of the Japanese restaurant next door).<br>
+                            There is no front desk; we use self check-in. For any questions, please contact us via <strong>WhatsApp: +886 965 832 882</strong>.
+                        </div>
+                    </div>
+                    <div class="notice-item">
+                        <i data-lucide="concierge-bell" class="notice-lucide-icon"></i>
+                        <div>
+                            <strong>Forgotten or lost items</strong><br>
+                            We are unable to mail back items left behind, and we cannot take responsibility for lost valuables. Please look after your personal belongings during your stay. Thank you.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Title -->
+            <div class="faq-title-block fade-up" style="text-align:center; margin: 80px 0 48px;">
+                <h2 class="serif" style="font-size: 2.2rem; letter-spacing: 0.12em; color: var(--primary-text);">Frequently Asked Questions
+                </h2>
+                <p style="color: var(--secondary-text); margin-top: 12px; font-size: 0.95rem; letter-spacing: 0.05em;">
+                    FAQ</p>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class="faq-list fade-up">
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Where is the hotel located?</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No. 95, Deyang Road, Jiaoxi Township, Yilan County, Taiwan.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Parking information</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>"CarTing Parking Lot – Jiaoxi Tangweigou"</strong> (free for hotel guests)<br>
+                                    Park in any available space — no assigned spots<br>
+                                    Free to enter and exit during the parking period<br>
+                                    Parking period:<br>
+                                    12:00 noon on check-in day to<br>
+                                    12:00 noon on check-out day<br>
+                                    No need to check in or out at the payment machine<br>
+                                    📌<strong>Parking beyond 12:00 noon after check-out is at your own expense.</strong></p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Breakfast hours, location &amp; vouchers</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The breakfast shop is <strong>closed on Thursdays</strong> (if this falls during your stay, the cost of that day's breakfast vouchers will be deducted from your room rate).<br>
+                            Breakfast hours: <strong>06:00 – 12:30</strong><br>
+                            Double rooms receive 2 vouchers, quadruple rooms 4 vouchers (1 voucher = NT$60 cash coupon).<br><br>
+                            Location: turn right out of our entrance — look for the purple sign "<strong>City Burger (城市漢堡)</strong>" on your right.<br>
+                            Simply mention "Sincere Resort (辰馨辰懿)" and your room number to dine.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Bringing pets</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>🐾 We are <strong>pet-friendly</strong> — pets are welcome to stay with no deposit required.<br><br>
+                            House rules: pets must stay out of the bathtub and off the bed, no accidents indoors, and the room must be kept clean.<br>
+                            Violations will incur a cleaning and damage fee of <strong>NT$500–1,000</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Renting a scooter or car</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our partner: <strong>Boda United Rental (伯達聯合租車)</strong><br>
+                            Address: No. 167, Section 2, Zhongshan Road, Jiaoxi Township<br><br>
+                            Mention "Sincere Hot Spring Resort (辰馨辰懿溫泉會館)" for a discount: <strong>NT$50</strong> off scooter rental, <strong>NT$200</strong> off car rental.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Check-in and check-out times</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>🔑 <strong>Check-in: 15:00</strong> (for early check-in, please contact us in advance — subject to same-day availability).<br>
+                            🔑 <strong>Check-out: by 11:00 the next day.</strong> Please leave the key on the shoe cabinet in the entryway and leave the power card in its slot (do not lock the door when you leave).<br><br>
+                            📌 A NT$500 fee applies for lost keys or power cards.<br>
+                            📌 Guests using the parking lot may keep their car parked until 12:00 (courtesy extension).</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Bank transfer details</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Taiwan Cooperative Bank (bank code 006)<br>
+                            Account number: <strong>5425988017549</strong><br><br>
+                            After transferring, please provide the last five digits of your account number for verification.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Can I book directly by message?</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes — please message us on <strong>WhatsApp: +886 965 832 882</strong> and follow the booking steps to complete your reservation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Scooter parking</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Scooters may be parked in front of the hotel (as long as they don't block the entrance or pedestrians), or in the <strong>Fukuoka scooter spaces</strong> across the street.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Do you provide a baby bathtub?</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes — baby bathtubs are placed on top of the <strong>storage cabinet on the 2nd floor</strong>. Feel free to take one.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Does every room have a hot spring bath?</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Every room features a <strong>stone soaking bath</strong> for hot spring bathing.<br><br>
+                            We hold a certified hot spring license. The water is a <strong>sodium bicarbonate spring</strong> — known as the "Beauty Bath". Soak as long as you like without wrinkly skin — the longer you soak, the softer your skin ✨</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Can extra beds be added?</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No extra beds — occupancy follows the room type. <strong>Children aged 0–6 are not counted</strong> toward the guest limit.</p>
+                    </div>
+                </div>
+
+            </div><!-- /faq-list -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section" id="footer">
+        <i data-lucide="map-pin" class="bg-deco-icon bg-deco-1"></i>
+        <i data-lucide="phone" class="bg-deco-icon bg-deco-5"></i>
+        <div class="container py-20">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="mb-4">
+                        <span class="footer-logo-text">Sincere Hot Spring &amp; Resort</span>
+                    </div>
+                    <p class="body-text opacity-80" style="max-width: 320px;">An elegant modern hot spring retreat with minimalist aesthetics in Jiaoxi, Yilan.</p>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 class="serif text-xl border-bottom-accent pb-4 mb-8">Contact Us</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <i data-lucide="message-circle"></i>
+                            <div>
+                                <span class="block font-bold mb-1">WhatsApp: <a href="https://wa.me/886965832882"
+                                        target="_blank" style="color: inherit;">+886 965 832 882</a></span>
+                                <span class="block opacity-70 text-sm">Message us on WhatsApp for reservations and inquiries</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i data-lucide="map-pin"></i>
+                            <div>
+                                <span class="block">No. 95, Deyang Road, Jiaoxi Township, Yilan County, Taiwan</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4 class="serif text-xl border-bottom-accent pb-4 mb-8">Follow Us</h4>
+                    <div class="footer-social-icons">
+                        <a href="https://www.facebook.com/sincereresort/" target="_blank" class="social-icon-btn"
+                            aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/sincere_resort/" target="_blank" class="social-icon-btn"
+                            aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://www.threads.com/@sincere_resort" target="_blank" class="social-icon-btn"
+                            aria-label="Threads">
+                            <svg viewBox="0 0 192 192" width="20" height="20" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0956 96.9879 60.1301 116.292C60.6536 126.115 65.4535 134.498 73.7135 140.011C80.8264 144.663 89.9917 146.938 99.5058 146.423C111.993 145.74 121.894 140.709 128.854 131.492C134.232 124.333 137.608 115.131 139.093 103.527C145.78 107.457 150.73 112.92 153.336 119.505C157.842 130.931 158.128 149.688 144.396 163.42C132.612 175.204 118.468 180.458 96.9974 180.623C73.2031 180.44 55.0479 173.263 43.0819 159.298C31.7649 146.115 25.9169 126.886 25.7499 102.066C25.9169 77.2458 31.7649 58.0162 43.0819 44.8335C55.0479 30.8686 73.2031 23.6914 96.9974 23.5084C120.956 23.6928 139.338 30.9124 151.526 44.929C157.476 51.7764 161.913 60.4435 164.748 70.6518L180.18 66.2774C176.768 53.7527 171.275 42.9799 163.727 34.1073C148.979 17.0385 127.359 8.01467 97.0995 7.79199H96.9003C66.6596 8.01467 45.0668 17.0385 30.3501 34.1073C17.2066 49.5379 10.4233 71.6608 10.2166 99.972L10.2139 102.066L10.2166 104.16C10.4233 132.471 17.2066 154.594 30.3501 170.025C45.0668 187.093 66.6596 196.117 96.9003 196.34H97.0995C124.588 196.132 144.018 188.968 156.727 176.26C173.312 159.677 172.791 138.384 167.2 124.215C163.13 113.977 155.785 105.597 145.38 99.9772C144.093 96.0325 142.4 92.3719 140.324 89.0526L141.537 88.9883Z" />
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/886965832882" target="_blank" class="social-icon-btn"
+                            aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom custom-copyright">
+                &copy; Sincere Hot Spring &amp; Resort. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Gallery Lightbox Modal -->
+    <div class="gallery-modal" id="gallery-modal" role="dialog" aria-modal="true">
+        <button class="gallery-modal-close" id="gallery-modal-close" aria-label="Close">&times;</button>
+        <div class="gallery-modal-header">
+            <span class="gallery-room-name" id="gallery-room-name"></span>
+            <span class="gallery-counter" id="gallery-counter"></span>
+        </div>
+        <div class="gallery-modal-body">
+            <button class="gallery-nav gallery-prev" id="gallery-prev" aria-label="Previous">
+                <i data-lucide="chevron-left"></i>
+            </button>
+            <div class="gallery-img-wrap">
+                <img src="" alt="Room photo" id="gallery-main-img">
+            </div>
+            <button class="gallery-nav gallery-next" id="gallery-next" aria-label="Next">
+                <i data-lucide="chevron-right"></i>
+            </button>
+        </div>
+        <div class="gallery-thumbs" id="gallery-thumbs"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

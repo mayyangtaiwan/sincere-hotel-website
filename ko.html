@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sincere Hot Spring Resort｜공식 웹사이트</title>
+    <meta name="description" content="대만 이란현 자오시에 위치한 Sincere Hot Spring Resort(辰馨辰懿溫泉會館)는 모던 럭셔리와 젠 스타일 미학이 어우러진 온천 호텔입니다. 천연 탄산수소나트륨 온천, 정성스러운 조식, 시티뷰 객실을 제공합니다. 자오시 온천 힐링 여행을 예약하세요.">
+
+    <!-- Open Graph / Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sincere Hot Spring Resort｜공식 웹사이트">
+    <meta property="og:description" content="대만 이란현 자오시에 위치한 Sincere Hot Spring Resort(辰馨辰懿溫泉會館)는 모던 럭셔리와 젠 스타일 미학이 어우러진 온천 호텔입니다. 천연 탄산수소나트륨 온천, 정성스러운 조식, 시티뷰 객실을 제공합니다. 자오시 온천 힐링 여행을 예약하세요.">
+    <meta property="og:image" content="assets/hero.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="900">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sincere Hot Spring Resort｜공식 웹사이트">
+    <meta name="twitter:description" content="대만 이란현 자오시에 위치한 Sincere Hot Spring Resort(辰馨辰懿溫泉會館)는 모던 럭셔리와 젠 스타일 미학이 어우러진 온천 호텔입니다. 천연 탄산수소나트륨 온천, 정성스러운 조식, 시티뷰 객실을 제공합니다. 자오시 온천 힐링 여행을 예약하세요.">
+    <meta name="twitter:image" content="assets/hero.png">
+
+    <!-- Standard Thumbnail for Some Search Platforms -->
+    <meta name="thumbnail" content="assets/hero.png">
+
+    <!-- JSON-LD Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "Sincere Hot Spring Resort",
+      "image": "assets/hero.png",
+      "description": "대만 이란현 자오시에 위치한 Sincere Hot Spring Resort(辰馨辰懿溫泉會館)는 모던 럭셔리와 젠 스타일 미학이 어우러진 온천 호텔입니다. 천연 탄산수소나트륨 온천, 정성스러운 조식, 시티뷰 객실을 제공합니다.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "No. 95, Deyang Road",
+        "addressLocality": "Jiaoxi Township",
+        "addressRegion": "Yilan County",
+        "postalCode": "262",
+        "addressCountry": "TW"
+      },
+      "telephone": "+886-965-832-882"
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Noto+Serif+KR:wght@400;700&family=Noto+Sans+TC:wght@300;400;700&family=Noto+Serif+TC:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --serif-font: "Noto Serif KR", "Noto Serif TC", serif;
+            --sans-font: "Noto Sans KR", "Noto Sans TC", sans-serif;
+        }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="assets/favicon-144.png">
+    <link rel="apple-touch-icon" href="assets/favicon-144.png">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo logo-group mb-0">
+                <img src="assets/icon.png" alt="Icon" class="brand-icon">
+                <img src="assets/logo.png" alt="Sincere Hot Spring Resort" class="brand-text">
+            </div>
+            <div class="nav-links desktop-only">
+                <a href="#intro">소개</a>
+                <a href="#room-types">객실 안내</a>
+                <a href="#footer">문의하기</a>
+            </div>
+            <div class="nav-lang desktop-only">
+                <div class="lang-dropdown">
+                    <button class="lang-dropdown-btn" aria-label="언어 변경" aria-haspopup="true">
+                        <i data-lucide="globe"></i>한국어<i data-lucide="chevron-down" class="lang-chevron"></i>
+                    </button>
+                    <div class="lang-dropdown-menu">
+                        <a href="index.html">中文</a>
+                        <a href="en.html">EN</a>
+                        <a href="ja.html">日本語</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-toggle" id="menu-btn">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobile-nav">
+        <button class="mobile-nav-close" id="mobile-nav-close" aria-label="닫기">&times;</button>
+        <nav class="mobile-nav-links">
+            <a href="#intro" class="mobile-nav-link">소개</a>
+            <a href="#room-types" class="mobile-nav-link">객실 안내</a>
+            <a href="#footer" class="mobile-nav-link">문의하기</a>
+            <div class="mobile-lang-group">
+                <a href="index.html" class="mobile-nav-link lang-switch">中文</a>
+                <a href="en.html" class="mobile-nav-link lang-switch">EN</a>
+                <a href="ja.html" class="mobile-nav-link lang-switch">日本語</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Side CTA -->
+    <div class="side-cta">
+        <a href="#booking" class="cta-vertical">
+            <span>예약하기</span>
+            <i data-lucide="calendar-days"></i>
+        </a>
+        <a href="https://wa.me/886965832882" target="_blank" class="line-float-btn"
+            aria-label="WhatsApp">
+            <svg class="whatsapp-icon-svg" viewBox="0 0 24 24" fill="#25D366" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+        </a>
+    </div>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-bg">
+            <img src="assets/hero.png" alt="Sincere Hotel Hero">
+            <div class="hero-overlay"></div>
+        </div>
+        <!-- Decorative Icons -->
+        <i data-lucide="sparkles" class="bg-deco-icon bg-deco-1"></i>
+        <i data-lucide="waves" class="bg-deco-icon bg-deco-2"></i>
+        <i data-lucide="sparkle" class="bg-deco-icon bg-deco-6"></i>
+        <i data-lucide="moon-star" class="bg-deco-icon bg-deco-7"></i>
+
+        <div class="hero-content fade-up flex flex-col items-center justify-center">
+            <h1 class="script-font text-white" style="margin-bottom: 16px;">Sincere Hotel</h1>
+            <h2 class="serif text-white"
+                style="letter-spacing: 0.35em; font-size: 1.4rem; margin-bottom: 60px; margin-left: 0.35em; opacity: 0.95;">
+                자오시・辰馨辰懿</h2>
+            <a href="#booking" class="btn-primary square-btn">예약하기</a>
+        </div>
+        <div class="scroll-down">
+            <div class="line"></div>
+            <span class="uppercase tracking-widest text-[10px]">Scroll</span>
+        </div>
+    </section>
+
+    <!-- Introduction & Amenities (Elegant Layout) -->
+    <section class="elegant-intro-section" id="intro" style="padding: 120px 0;">
+        <i data-lucide="leaf" class="bg-deco-icon bg-deco-4"></i>
+        <i data-lucide="flower-2" class="bg-deco-icon bg-deco-3"></i>
+        <i data-lucide="leaf" class="bg-deco-icon bg-deco-8"></i>
+        <i data-lucide="flower" class="bg-deco-icon bg-deco-9"></i>
+        <div class="container relative mt-10" id="amenities">
+            <div class="elegant-header fade-up">
+                <div class="vertical-title shadow-text serif">
+                    소<br>개
+                </div>
+                <div class="elegant-text">
+                    <p>Sincere Hot Spring &amp; Resort(辰馨辰懿溫泉會館)는 대만 이란현 자오시향 더양루에 위치해 있으며, 자오시 옛거리와
+                        탕웨이거우 온천공원까지 도보로 이동할 수 있습니다. 모든 객실에는 개인 암석 욕조가 마련되어 있으며, 인증받은 천연 탄산수소나트륨
+                        온천수—일명 '미인탕'—를 사용합니다. 오래 몸을 담가도 피부가 불지 않고 담글수록 촉촉하고 매끄러워져, 자오시 온천에서 가장
+                        사랑받는 수질 중 하나입니다.
+                    </p>
+                    <p>아늑한 2인실부터 테라스가 딸린 넓은 4인실까지 네 가지 엄선된 객실을 제공합니다. 전관 스마트 셀프 체크인 방식으로 운영되어
+                        언제나 자유롭고 프라이빗한 시간을 보내실 수 있습니다. 반려동물 동반도 환영하며, 인근 조식당·주차장·현지 렌터카 업체와 제휴하여
+                        자오시 여행의 모든 순간을 세심하게 준비해 드립니다.
+                    </p>
+                </div>
+            </div>
+
+            <div class="elegant-gallery fade-up" data-delay="0.2">
+                <div class="elegant-gallery-item"><img src="assets/spot.png" alt="천연 온천 풍경"></div>
+                <div class="elegant-gallery-item"><img src="assets/building.png" alt="프리미엄 숙박 공간"></div>
+                <div class="elegant-gallery-item"><img src="assets/waterfall.png" alt="일본식 욕탕 시설"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Types Showcase -->
+    <section class="rooms-section section-padding" id="room-types">
+        <i data-lucide="mountains" class="bg-deco-icon bg-deco-1"></i>
+        <i data-lucide="thermometer-sun" class="bg-deco-icon bg-deco-5"></i>
+        <i data-lucide="mountain" class="bg-deco-icon bg-deco-10"></i>
+        <i data-lucide="waves" class="bg-deco-icon bg-deco-6"></i>
+        <div class="container">
+            <div class="mb-16 fade-up" style="text-align: center;">
+                <h2 class="serif text-4xl md:text-5xl" style="letter-spacing: 0.1em; color: var(--primary-text);">객실 안내
+                </h2>
+            </div>
+
+            <div class="room-grid">
+                <!-- Room Card 1: 2인실 - 전용 욕실 포함 (201) -->
+                <div class="room-card glass fade-up">
+                    <div class="card-img">
+                        <img src="assets/201/S__4653092_0.jpg" alt="2인실 - 전용 욕실 포함">
+                        <button class="card-gallery-btn" aria-label="사진 더 보기" data-room="2인실 - 전용 욕실 포함"
+                            data-images='["assets/201/S__4653083_0.jpg","assets/201/S__4653084_0.jpg","assets/201/S__4653085_0.jpg","assets/201/S__4653086_0.jpg","assets/201/S__4653087_0.jpg","assets/201/S__4653088_0.jpg","assets/201/S__4653089_0.jpg","assets/201/S__4653090_0.jpg","assets/201/S__4653091_0.jpg","assets/201/S__4653092_0.jpg","assets/201/S__4653093.jpg"]'>
+                            <i data-lucide="images"></i> 사진 더 보기
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="serif text-2xl mb-2">2인실 - 전용 욕실 포함 (2층 201호)</h3>
+                        <div class="room-meta mb-6">
+                            <span><i data-lucide="maximize"></i> 33 m²</span>
+                            <span><i data-lucide="users"></i> 2인</span>
+                            <span><i data-lucide="bed"></i> 더블 침대 1개</span>
+                            <span><i data-lucide="mountain-snow"></i> 시티뷰</span>
+                        </div>
+                        <div class="card-cta-group">
+                            <span class="cta-label">지금 예약</span>
+                            <div class="booking-links">
+                                <a href="https://www.booking.com/hotel/tw/chen-xin-chen-yi-er-guan.ko.html"
+                                    target="_blank" class="booking-btn">Booking</a>
+                                <a href="https://www.agoda.com/ko-kr/h30053903/hotel/yilan-tw.html" target="_blank"
+                                    class="agoda-btn">Agoda</a>
+                                <a href="https://kr.trip.com/hotels/cityname-hotel-detail-133686693/hotelname/"
+                                    target="_blank" class="trip-btn">Trip.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Card 2: 스탠다드 2인실 (301) -->
+                <div class="room-card glass fade-up" data-delay="0.1">
+                    <div class="card-img">
+                        <img src="assets/301/S__4653109_0.jpg" alt="스탠다드 2인실">
+
+                        <button class="card-gallery-btn" aria-label="사진 더 보기" data-room="스탠다드 2인실"
+                            data-images='["assets/301/S__4653106_0.jpg","assets/301/S__4653107_0.jpg","assets/301/S__4653108_0.jpg","assets/301/S__4653109_0.jpg","assets/301/S__4653110_0.jpg","assets/301/S__4653111_0.jpg","assets/301/S__4653112_0.jpg","assets/301/S__4653113_0.jpg"]'>
+                            <i data-lucide="images"></i> 사진 더 보기
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="serif text-2xl mb-2">스탠다드 2인실 (3층 301호)</h3>
+                        <div class="room-meta mb-6">
+                            <span><i data-lucide="maximize"></i> 30 m²</span>
+                            <span><i data-lucide="users"></i> 2인</span>
+                            <span><i data-lucide="bed"></i> 더블 침대 1개</span>
+                            <span><i data-lucide="mountain-snow"></i> 시티뷰</span>
+                        </div>
+                        <div class="card-cta-group">
+                            <span class="cta-label">지금 예약</span>
+                            <div class="booking-links">
+                                <a href="https://www.booking.com/hotel/tw/chen-xin-chen-yi-er-guan.ko.html"
+                                    target="_blank" class="booking-btn">Booking</a>
+                                <a href="https://www.agoda.com/ko-kr/h30053903/hotel/yilan-tw.html" target="_blank"
+                                    class="agoda-btn">Agoda</a>
+                                <a href="https://kr.trip.com/hotels/cityname-hotel-detail-133686693/hotelname/"
+                                    target="_blank" class="trip-btn">Trip.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Card 3: 4인실 - 테라스 포함 (302) -->
+                <div class="room-card glass fade-up" data-delay="0.2">
+                    <div class="card-img">
+                        <img src="assets/302/S__4653116_0.jpg" alt="4인실 - 테라스 포함">
+
+                        <button class="card-gallery-btn" aria-label="사진 더 보기" data-room="4인실 - 테라스 포함"
+                            data-images='["assets/302/S__4653116_0.jpg","assets/302/S__4653117_0.jpg","assets/302/S__4653118_0.jpg","assets/302/S__4653119_0.jpg","assets/302/S__4653120_0.jpg","assets/302/S__4653121_0.jpg","assets/302/S__4653122_0.jpg","assets/302/S__4653123_0.jpg","assets/302/S__4653124_0.jpg","assets/302/S__4653125.jpg"]'>
+                            <i data-lucide="images"></i> 사진 더 보기
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="serif text-2xl mb-2">4인실 - 테라스 포함 (3층 302호)</h3>
+                        <div class="room-meta mb-6">
+                            <span><i data-lucide="maximize"></i> 50 m²</span>
+                            <span><i data-lucide="users"></i> 4인</span>
+                            <span><i data-lucide="bed"></i> 더블 침대 2개</span>
+                            <span><i data-lucide="mountain-snow"></i> 시티뷰</span>
+                        </div>
+                        <div class="card-cta-group">
+                            <span class="cta-label">지금 예약</span>
+                            <div class="booking-links">
+                                <a href="https://www.booking.com/hotel/tw/chen-xin-chen-yi-er-guan.ko.html"
+                                    target="_blank" class="booking-btn">Booking</a>
+                                <a href="https://www.agoda.com/ko-kr/h30053903/hotel/yilan-tw.html" target="_blank"
+                                    class="agoda-btn">Agoda</a>
+                                <a href="https://kr.trip.com/hotels/cityname-hotel-detail-133686693/hotelname/"
+                                    target="_blank" class="trip-btn">Trip.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Card 4: 4인실 - 욕조 포함 (202) -->
+                <div class="room-card glass fade-up" data-delay="0.3">
+                    <div class="card-img">
+                        <img src="assets/202/S__4653102_0.jpg" alt="4인실 - 욕조 포함">
+
+                        <button class="card-gallery-btn" aria-label="사진 더 보기" data-room="4인실 - 욕조 포함"
+                            data-images='["assets/202/S__4653096_0.jpg","assets/202/S__4653097_0.jpg","assets/202/S__4653098_0.jpg","assets/202/S__4653099_0.jpg","assets/202/S__4653100_0.jpg","assets/202/S__4653101_0.jpg","assets/202/S__4653102_0.jpg","assets/202/S__4653103_0.jpg"]'>
+                            <i data-lucide="images"></i> 사진 더 보기
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="serif text-2xl mb-2">4인실 - 욕조 포함 (2층 202호)</h3>
+                        <div class="room-meta mb-6">
+                            <span><i data-lucide="maximize"></i> 50 m²</span>
+                            <span><i data-lucide="users"></i> 4인</span>
+                            <span><i data-lucide="bed"></i> 더블 침대 2개</span>
+                            <span><i data-lucide="mountain-snow"></i> 시티뷰</span>
+                        </div>
+                        <div class="card-cta-group">
+                            <span class="cta-label">지금 예약</span>
+                            <div class="booking-links">
+                                <a href="https://www.booking.com/hotel/tw/chen-xin-chen-yi-er-guan.ko.html"
+                                    target="_blank" class="booking-btn">Booking</a>
+                                <a href="https://www.agoda.com/ko-kr/h30053903/hotel/yilan-tw.html" target="_blank"
+                                    class="agoda-btn">Agoda</a>
+                                <a href="https://kr.trip.com/hotels/cityname-hotel-detail-133686693/hotelname/"
+                                    target="_blank" class="trip-btn">Trip.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Platforms & Reviews -->
+    <section class="booking-section section-padding bg-slate-50/50" id="booking">
+        <i data-lucide="calendar-check" class="bg-deco-icon bg-deco-2"></i>
+        <i data-lucide="sparkle" class="bg-deco-icon bg-deco-3"></i>
+        <i data-lucide="coffee" class="bg-deco-icon bg-deco-7"></i>
+        <i data-lucide="utensils" class="bg-deco-icon bg-deco-4"></i>
+        <!-- Marquee Reviews -->
+        <div class="marquee-wrapper fade-up" data-delay="0.1" style="margin-bottom: 60px;">
+            <div class="marquee-track">
+                <!-- Group 1 -->
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Hsu</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">큰길과 옛거리까지 걸어서 갈 수 있어 가족 여행에 최고로 편리한 숙소예요!</p><span class="room-type">4인실 - 욕조 포함</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Tzu-Chen</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">객실이 정말 깨끗하고 근처에서 쇼핑하기도 편해요. 추천합니다!</p><span class="room-type">4인실 - 테라스 포함</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Peiying</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">욕조가 넓어서 온천욕이 정말 좋았어요. 커플 여행에 딱입니다.</p><span class="room-type">스탠다드 2인실</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Ting-Yu</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">아주 편안한 숙박이었어요. 사장님이 친절하시고 반려동물 동반 가능이라 더 좋아요!</p><span class="room-type">스탠다드 2인실</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Jackymao</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">반려동물 친화적일 뿐 아니라 방도 넓고 전용 대형 온천 욕조까지. 최고예요!</p><span class="room-type">4인실 - 테라스 포함</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Mr. Ge</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">욕조에 물이 빨리 받아져서 좋고, 나가면 바로 상점가라 위치가 정말 좋아요.</p><span class="room-type">4인실 - 테라스 포함</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Yi-Hsien</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">분위기와 환경이 편안해서 몸과 마음이 완전히 힐링되는 온천 숙소입니다.</p><span class="room-type">스탠다드 2인실</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Elaine</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">편안하고 공간도 넓어요. 반려동물 친화 정책은 특히 칭찬하고 싶어요!</p><span class="room-type">2인실 - 전용 욕실 포함</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Yu-Chiao</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">침대가 넓고 편하며 방은 깨끗하고 냄새도 없어요. 탕웨이거우와도 아주 가까워요!</p><span class="room-type">2인실 - 전용 욕실 포함</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Chang</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">넓고 깨끗하며 아늑한 다다미 공간도 있어요. 아이 동반 가족에게 추천!</p><span class="room-type">4인실 - 욕조 포함</span>
+                </div>
+                <!-- Group 2 (Clone for infinite marquee) -->
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Hsu</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">큰길과 옛거리까지 걸어서 갈 수 있어 가족 여행에 최고로 편리한 숙소예요!</p><span class="room-type">4인실 - 욕조 포함</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Tzu-Chen</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">객실이 정말 깨끗하고 근처에서 쇼핑하기도 편해요. 추천합니다!</p><span class="room-type">4인실 - 테라스 포함</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Peiying</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">욕조가 넓어서 온천욕이 정말 좋았어요. 커플 여행에 딱입니다.</p><span class="room-type">스탠다드 2인실</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Ting-Yu</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">아주 편안한 숙박이었어요. 사장님이 친절하시고 반려동물 동반 가능이라 더 좋아요!</p><span class="room-type">스탠다드 2인실</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Jackymao</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">반려동물 친화적일 뿐 아니라 방도 넓고 전용 대형 온천 욕조까지. 최고예요!</p><span class="room-type">4인실 - 테라스 포함</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Mr. Ge</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">욕조에 물이 빨리 받아져서 좋고, 나가면 바로 상점가라 위치가 정말 좋아요.</p><span class="room-type">4인실 - 테라스 포함</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Yi-Hsien</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">분위기와 환경이 편안해서 몸과 마음이 완전히 힐링되는 온천 숙소입니다.</p><span class="room-type">스탠다드 2인실</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Elaine</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">편안하고 공간도 넓어요. 반려동물 친화 정책은 특히 칭찬하고 싶어요!</p><span class="room-type">2인실 - 전용 욕실 포함</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Yu-Chiao</span><span class="stars">★★★★★</span></div>
+                    <p class="review-text">침대가 넓고 편하며 방은 깨끗하고 냄새도 없어요. 탕웨이거우와도 아주 가까워요!</p><span class="room-type">2인실 - 전용 욕실 포함</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="user-name">Chang</span><span class="stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">넓고 깨끗하며 아늑한 다다미 공간도 있어요. 아이 동반 가족에게 추천!</p><span class="room-type">4인실 - 욕조 포함</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-20 mt-10 fade-up">
+            <div class="booking-card">
+                <div class="mb-16 fade-up" style="text-align: center;">
+                    <h2 class="serif text-4xl md:text-5xl" style="letter-spacing: 0.1em; color: var(--primary-text);">
+                        온라인 예약</h2>
+                </div>
+                <div class="platform-group justify-center">
+                    <a href="https://www.booking.com/hotel/tw/chen-xin-chen-yi-er-guan.ko.html" target="_blank"
+                        class="platform-btn booking-com shadow-sm hover:shadow-xl">
+                        <span>Booking.com</span>
+                        <i data-lucide="external-link"></i>
+                    </a>
+                    <a href="https://www.agoda.com/ko-kr/h30053903/hotel/yilan-tw.html" target="_blank"
+                        class="platform-btn agoda shadow-sm hover:shadow-xl">
+                        <span>Agoda</span>
+                        <i data-lucide="external-link"></i>
+                    </a>
+                    <a href="https://kr.trip.com/hotels/cityname-hotel-detail-133686693/hotelname/" target="_blank"
+                        class="platform-btn trip shadow-sm hover:shadow-xl">
+                        <span>Trip.com</span>
+                        <i data-lucide="external-link"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- Notice + FAQ Section -->
+    <section class="faq-section section-padding" id="faq">
+        <i data-lucide="help-circle" class="bg-deco-icon bg-deco-4"></i>
+        <i data-lucide="bath" class="bg-deco-icon bg-deco-5"></i>
+        <i data-lucide="bubbles" class="bg-deco-icon bg-deco-8"></i>
+        <i data-lucide="towel-rack" class="bg-deco-icon bg-deco-9"></i>
+        <div class="container">
+
+            <!-- Notice Section Header -->
+            <div class="mb-12 text-center fade-up">
+                <span
+                    class="inline-block px-4 py-1.5 bg-brand-accent/20 text-brand-text-primary text-[10px] font-bold tracking-widest uppercase rounded-full mb-4"
+                    style="background: rgba(234, 190, 183, 0.25); color: var(--primary-text); font-family: var(--sans-font);">
+                    GUIDELINES
+                </span>
+                <h3 class="serif text-3xl md:text-5xl font-bold mb-5"
+                    style="color: var(--primary-text); letter-spacing: 0.1em; line-height: 1.2;">
+                    숙박 안내 및 유의사항
+                </h3>
+                <p class="body-text opacity-70"
+                    style="letter-spacing: 0.05em; font-size: 1rem; max-width: 600px; margin: 0 auto;">
+                    원활하고 편안한 숙박을 위해 체크인 전에 아래 내용을 확인해 주세요
+                </p>
+            </div>
+
+            <!-- House Notes -->
+            <div class="notice-card fade-up">
+                <div class="notice-body">
+                    <div class="notice-item">
+                        <i data-lucide="concierge-bell" class="notice-lucide-icon"></i>
+                        <div>
+                            <strong>엘리베이터가 없습니다</strong> — 2~3층은 계단을 이용하셔야 합니다.<br>
+                            짐을 내리는 동안 정문 앞에 잠시 주차하실 수 있습니다(옆 일식당 입구를 막지 말아 주세요).<br>
+                            프런트 데스크가 없는 셀프 체크인 방식입니다. 문의 사항은 <strong>WhatsApp: +886 965 832 882</strong>로 연락해 주세요.
+                        </div>
+                    </div>
+                    <div class="notice-item">
+                        <i data-lucide="concierge-bell" class="notice-lucide-icon"></i>
+                        <div>
+                            <strong>분실물 안내</strong><br>
+                            두고 가신 물건의 우편 발송이나 귀중품 분실에 대한 책임은 지지 않습니다. 숙박 중 개인 귀중품은 직접 관리해 주시고, 소지품을 잘 챙겨 주시기 바랍니다. 감사합니다.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Title -->
+            <div class="faq-title-block fade-up" style="text-align:center; margin: 80px 0 48px;">
+                <h2 class="serif" style="font-size: 2.2rem; letter-spacing: 0.12em; color: var(--primary-text);">자주 묻는 질문
+                </h2>
+                <p style="color: var(--secondary-text); margin-top: 12px; font-size: 0.95rem; letter-spacing: 0.05em;">
+                    FAQ</p>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class="faq-list fade-up">
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>숙소 주소는 어디인가요?</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>대만 이란현 자오시향 더양루 95호 (No. 95, Deyang Road, Jiaoxi Township, Yilan County).</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>주차 안내</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>"처팅 주차장(俥亭停車場) - 자오시 탕웨이거우"</strong>(투숙객 무료)<br>
+                                    빈자리에 자유롭게 주차 가능(지정석 없음)<br>
+                                    이용 기간 내 자유롭게 출입 가능<br>
+                                    주차 가능 시간:<br>
+                                    (체크인 날) 정오 12시부터<br>
+                                    (체크아웃 날) 정오 12시까지<br>
+                                    정산기 등록 불필요<br>
+                                    📌<strong>체크아웃 후 12시 이후 주차는 본인 부담입니다.</strong></p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>조식 시간·위치·식사권 사용</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>조식당은 <strong>매주 목요일 휴무</strong>입니다(휴무일과 겹치면 당일 조식권 비용을 숙박비에서 차감해 드립니다).<br>
+                            이용 시간: <strong>06:00 – 12:30</strong><br>
+                            2인실은 2매, 4인실은 4매 제공(1매 = 현금권 60대만달러).<br><br>
+                            위치: 숙소에서 나와 우회전, 오른쪽 보라색 간판 "<strong>시티버거(城市漢堡)</strong>".<br>
+                            "Sincere Resort(辰馨辰懿)"와 객실 번호를 말씀하시면 식사하실 수 있습니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>반려동물 동반 안내</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>🐾 저희는 <strong>반려동물 친화</strong> 숙소로, 보증금 없이 반려동물과 함께 숙박하실 수 있습니다.<br><br>
+                            규칙: 욕조와 침대에 올리지 않기, 실내 배변 실수 방지, 청결 유지.<br>
+                            위반 시 청소 및 훼손 비용으로 <strong>500~1,000대만달러</strong>가 청구됩니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>스쿠터나 자동차를 렌트하고 싶어요</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>제휴 업체: <strong>보다 연합 렌터카(伯達聯合租車)</strong><br>
+                            주소: 자오시향 중산루 2단 167호<br><br>
+                            "Sincere Hot Spring Resort(辰馨辰懿溫泉會館)"를 말씀하시면 스쿠터 <strong>50대만달러</strong>, 자동차 <strong>200대만달러</strong> 할인을 받으실 수 있습니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>체크인·체크아웃 시간</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>🔑 <strong>체크인: 15:00</strong> (얼리 체크인은 사전에 연락 주시면 당일 객실 상황에 따라 안내해 드립니다).<br>
+                            🔑 <strong>체크아웃: 다음 날 11:00까지.</strong> 열쇠는 현관 신발장 위에 두시고, 카드키는 꽂아 두시면 됩니다(퇴실 시 문을 잠그지 마세요).<br><br>
+                            📌 열쇠·카드키 분실 시 500대만달러가 청구됩니다.<br>
+                            📌 주차장을 이용하시는 고객은 12:00까지 주차하실 수 있습니다(투숙객 서비스).</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>계좌 이체 안내</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>대만 합작금고은행(은행 코드 006)<br>
+                            계좌번호: <strong>5425988017549</strong><br><br>
+                            이체 후 확인을 위해 계좌번호 끝 5자리를 알려 주세요.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>메시지로 직접 예약할 수 있나요?</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>네 — <strong>WhatsApp: +886 965 832 882</strong>로 메시지를 보내 주시면 예약 절차를 안내해 드립니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>스쿠터 주차 위치</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>스쿠터는 숙소 입구 앞(입구나 보행자 통행을 막지 않는 범위) 또는 길 건너 <strong>후쿠오카(福岡) 스쿠터 주차 구역</strong>에 세우실 수 있습니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>유아용 욕조가 있나요?</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>네 — <strong>2층 수납장 위</strong>에 준비되어 있으니 자유롭게 사용하세요.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>모든 객실에서 온천욕이 가능한가요?</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>모든 객실에 <strong>암석 욕조</strong>가 있어 온천욕을 즐기실 수 있습니다.<br><br>
+                            정식 온천 허가를 보유하고 있으며, 수질은 <strong>탄산수소나트륨천</strong>(일명 '미인탕')입니다. 오래 담가도 피부가 불지 않고, 담글수록 피부가 고와집니다 ✨</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>침대를 추가할 수 있나요?</span>
+                        <i data-lucide="chevron-down" class="faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>침대 추가는 불가하며, 객실 정원에 맞춰 숙박해 주세요. <strong>0~6세 어린이는 인원에 포함되지 않습니다</strong>.</p>
+                    </div>
+                </div>
+
+            </div><!-- /faq-list -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section" id="footer">
+        <i data-lucide="map-pin" class="bg-deco-icon bg-deco-1"></i>
+        <i data-lucide="phone" class="bg-deco-icon bg-deco-5"></i>
+        <div class="container py-20">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="mb-4">
+                        <span class="footer-logo-text">Sincere Hot Spring &amp; Resort</span>
+                    </div>
+                    <p class="body-text opacity-80" style="max-width: 320px;">대만 이란 자오시의 우아한 모던 온천과 미니멀 미학의 휴식 공간.</p>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 class="serif text-xl border-bottom-accent pb-4 mb-8">문의하기</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <i data-lucide="message-circle"></i>
+                            <div>
+                                <span class="block font-bold mb-1">WhatsApp: <a href="https://wa.me/886965832882"
+                                        target="_blank" style="color: inherit;">+886 965 832 882</a></span>
+                                <span class="block opacity-70 text-sm">예약 및 문의는 WhatsApp으로 메시지를 보내 주세요</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i data-lucide="map-pin"></i>
+                            <div>
+                                <span class="block">대만 이란현 자오시향 더양루 95호</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4 class="serif text-xl border-bottom-accent pb-4 mb-8">소셜 미디어</h4>
+                    <div class="footer-social-icons">
+                        <a href="https://www.facebook.com/sincereresort/" target="_blank" class="social-icon-btn"
+                            aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/sincere_resort/" target="_blank" class="social-icon-btn"
+                            aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://www.threads.com/@sincere_resort" target="_blank" class="social-icon-btn"
+                            aria-label="Threads">
+                            <svg viewBox="0 0 192 192" width="20" height="20" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0956 96.9879 60.1301 116.292C60.6536 126.115 65.4535 134.498 73.7135 140.011C80.8264 144.663 89.9917 146.938 99.5058 146.423C111.993 145.74 121.894 140.709 128.854 131.492C134.232 124.333 137.608 115.131 139.093 103.527C145.78 107.457 150.73 112.92 153.336 119.505C157.842 130.931 158.128 149.688 144.396 163.42C132.612 175.204 118.468 180.458 96.9974 180.623C73.2031 180.44 55.0479 173.263 43.0819 159.298C31.7649 146.115 25.9169 126.886 25.7499 102.066C25.9169 77.2458 31.7649 58.0162 43.0819 44.8335C55.0479 30.8686 73.2031 23.6914 96.9974 23.5084C120.956 23.6928 139.338 30.9124 151.526 44.929C157.476 51.7764 161.913 60.4435 164.748 70.6518L180.18 66.2774C176.768 53.7527 171.275 42.9799 163.727 34.1073C148.979 17.0385 127.359 8.01467 97.0995 7.79199H96.9003C66.6596 8.01467 45.0668 17.0385 30.3501 34.1073C17.2066 49.5379 10.4233 71.6608 10.2166 99.972L10.2139 102.066L10.2166 104.16C10.4233 132.471 17.2066 154.594 30.3501 170.025C45.0668 187.093 66.6596 196.117 96.9003 196.34H97.0995C124.588 196.132 144.018 188.968 156.727 176.26C173.312 159.677 172.791 138.384 167.2 124.215C163.13 113.977 155.785 105.597 145.38 99.9772C144.093 96.0325 142.4 92.3719 140.324 89.0526L141.537 88.9883Z" />
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/886965832882" target="_blank" class="social-icon-btn"
+                            aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom custom-copyright">
+                &copy; Sincere Hot Spring &amp; Resort. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Gallery Lightbox Modal -->
+    <div class="gallery-modal" id="gallery-modal" role="dialog" aria-modal="true">
+        <button class="gallery-modal-close" id="gallery-modal-close" aria-label="닫기">&times;</button>
+        <div class="gallery-modal-header">
+            <span class="gallery-room-name" id="gallery-room-name"></span>
+            <span class="gallery-counter" id="gallery-counter"></span>
+        </div>
+        <div class="gallery-modal-body">
+            <button class="gallery-nav gallery-prev" id="gallery-prev" aria-label="이전">
+                <i data-lucide="chevron-left"></i>
+            </button>
+            <div class="gallery-img-wrap">
+                <img src="" alt="객실 사진" id="gallery-main-img">
+            </div>
+            <button class="gallery-nav gallery-next" id="gallery-next" aria-label="다음">
+                <i data-lucide="chevron-right"></i>
+            </button>
+        </div>
+        <div class="gallery-thumbs" id="gallery-thumbs"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
